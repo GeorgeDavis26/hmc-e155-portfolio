@@ -1,7 +1,0 @@
----
-title: "Lab 1"
-description: "FPGA and MCU Setup and Testing"
-author: "George Davis"
-date: "8/26/25"
-draft: false
----
