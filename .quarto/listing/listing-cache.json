@@ -1,0 +1,10 @@
+{
+  "listingMap": {
+    "labs.qmd": [
+      "labs"
+    ],
+    "blog.qmd": [
+      "posts"
+    ]
+  }
+}
