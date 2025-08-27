@@ -12,4 +12,4 @@ about:
           href: https://github.com/GeorgeDavis26
 ---
 
-George Davis is a Senior Engineering student at Harvey Mudd College from Seattle, Washington. He is interested in electrical design including analog, RF, and digital circuits!
+George Davis is a Senior Engineering student at Harvey Mudd College from Seattle, Washington. He is interested in electrical design including analog, RF, and digital circuits. In his free time, George loves to play the drums, go on hikes, and spend time with his friends in anyway possible. His interest in engineering started with robotics but now with what he has learned at HMC he has the skills to apply himself to many different subjects!
