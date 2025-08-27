@@ -1,10 +1,16 @@
 ---
-title: "Hello Quarto"
+title: "Week 1 Reflections"
 description: "Welcome to my Quarto portfolio"
-author: "Josh Brake"
-date: "8/23/24"
+author: "George Davis"
+date: "8/26/25"
 categories:
   - reflection
   - labreport
 draft: false
 ---
+
+## Summary
+
+
+
+## Reflections on Lab
