@@ -1,0 +1,12 @@
+---
+title: "E155 Labs"
+listing:
+  contents: labs
+  sort: "date desc"
+  type: default
+  categories: false
+---
+
+## Lab 1: FPGA and MCU Setup and Testing
+## Lab 2: FPGA and MCU Setup and Testing
+## Lab 3: FPGA and MCU Setup and Testing
