@@ -49,13 +49,6 @@
     "text": "Lab 1 focused on setting up our MCU and FPGA board for the rest of the E155 class. Additionally, I wrote code to display the functionality of 3 SMT LEDs and a seven segment display using the breadboard adapter. My design met all requirements and I am excited to move on to the next lab!\nI spent 25 hours on this lab\nI would recommend addressing the ribbon cable shortage issue as soon as possible. I was noticing many unnecessary errrors arose from not having the propper wiring or broken jumpers between the ribbon cable female headers."
   },
   {
-    "objectID": "labs/lab1/lab1.html#circuit-schematic",
-    "href": "labs/lab1/lab1.html#circuit-schematic",
-    "title": "Lab 1 Report",
-    "section": "Circuit Schematic",
-    "text": "Circuit Schematic"
-  },
-  {
     "objectID": "labs/lab1/lab1.html#block-diagram-and-schematic",
     "href": "labs/lab1/lab1.html#block-diagram-and-schematic",
     "title": "Lab 1 Report",
@@ -67,7 +60,7 @@
     "href": "labs/lab1/lab1.html#questa-wave-forms",
     "title": "Lab 1 Report",
     "section": "Questa Wave Forms",
-    "text": "Questa Wave Forms\n\n\n\ntop module\n\n\n\n\n\nled_control module\n\n\n\n\n\nseven_seg_disp module"
+    "text": "Questa Wave Forms\n\n\n\nFigure 3: top module\n\n\n\n\n\nFigure 4: led_control module\n\n\n\n\n\nFigure 5: seven_seg_disp module"
   },
   {
     "objectID": "labs.html",
