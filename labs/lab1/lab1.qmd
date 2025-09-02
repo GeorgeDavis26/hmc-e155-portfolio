@@ -23,11 +23,19 @@ I spent 25 hours on this lab
 
 I would recommend addressing the ribbon cable shortage issue as soon as possible. I was noticing many unnecessary errrors arose from not having the propper wiring or broken jumpers between the ribbon cable female headers.
 
+## Technical Documentation
+
+The source code for this lab can be found in the associated Github repository found by following the link on the righthand side of the page.
+
 ## Block Diagram and Schematic
 
-![Figure 1](images/lab1_block-diagram.jpeg){width=3000}
-![Figure 2](images/lab1_schematic.jpeg){width=3000}
+![Figure 1: Block Diagram of System Verilog module desgin and heirarchy](images/lab1_block-diagram.jpeg){width=3000}
 
+Figure 1 shows the System Verilog module design for this lab including the combiantion logic and the HSOC instantation to leverage the onboard  oscilator
+
+![Figure 2: Schematic of physical circuit layout along with blocks representing the combinational verilog code](images/lab1_schematic.jpeg){width=3000}
+
+Figure 2 shows the physical layout of the circuit along with the pin names and numbers along with the component values and names as well. 100k ohm pull up resistors were used on the switching logic elements. 
 ## Questa Wave Forms
 
 ![Figure 3: top module](images/waveforms_top.jpeg){width=3000}
@@ -36,10 +44,13 @@ I would recommend addressing the ribbon cable shortage issue as soon as possible
 
 ![Figure 5: seven_seg_disp module](images/waveforms_seg.jpeg){width=3000}
 
+Figures 3, 4, and 5 show the induvidual automatic testbench files run on questa. Notice 0 errors for all test vectors.
 
 # Seven Segment Display LED Current Calculations
 
-![Figure 6](images/calcs.jpeg){width=3000}
+![Figure 6: Current Calculations](images/calcs.jpeg){width=3000}
+
+Figure 6 shows the currrent for a signle LED segment on the seven segment display and the total current draw of the entire component.
 
 # AI Prototype
 
@@ -47,7 +58,11 @@ I gave ChatGPT the following prompt
 
 Write SystemVerilog HDL to leverage the internal high speed oscillator in the Lattice UP5K FPGA and blink an LED at 2 Hz. Take full advantage of SystemVerilog syntax, for example, using logic instead of wire and reg.
 
-It responded with the following code
+It responded with the following statement and code:
+
+Got it — you want SystemVerilog code for the Lattice iCE40UP5K (UP5K) FPGA that uses the internal high-speed oscillator (HFOSC) to blink an LED at 2 Hz. The UP5K has an internal oscillator that runs at 48 MHz, which you can instantiate using the SB_HFOSC primitive.
+
+Here’s a clean SystemVerilog example that makes full use of modern syntax (logic, always_ff, localparam, etc.):
 
 module top (
     output logic led    // drive LED pin
@@ -87,9 +102,72 @@ module top (
 
 endmodule
 
+Key points:
+
+SB_HFOSC is the UP5K primitive for the internal high-speed oscillator.
+
+With .CLKHF_DIV("0b00"), the oscillator runs at 48 MHz.
+
+Counter counts to 24,000,000 cycles = 0.5 seconds → toggles LED = 2 Hz blink rate.
+
+logic and always_ff are used for modern, synthesizable SystemVerilog style.
+
+👉 If you’d prefer to save resources, you could also use one of the divided clock options (like 12 MHz or 6 MHz) and scale the counter down accordingly.
+
+Would you like me to also show you a parameterized version where you can set the blink frequency (e.g. 1 Hz, 5 Hz, 10 Hz) just by changing a parameter, without manually recomputing counter values?
+
 
 After creating a new Lattice Radiant project and sythesizing the file/ module that ChatGPT gave me the follow synthesis error was thrown.
 
 ERROR <35901063> - c:/users/gdavis/desktop/lab1_ai_prototype/source/impl_1/top.sv(16): instantiating unknown module SB_HFOSC. VERI-1063
 
 This occurred becuase I failed to set my project to the proper iCE40UP5K FPGA so therefore, the instantiation of SB_HFOSC couldn't reference anything. I knew to do this with my experience doing the lab, but if I were just blindly copying and pasting the code ChatGPT gave me, I would be completely stuck and need to reference the LLM again. After sending the error message to chat it provided me with the solution but I can imagine for a more complex issue Chat will struggle. This is why it is important to use LLMs with caution, especially if you are inexperienced with the subject at hand. These labs are complex and require a lot of details to complete correctly. If I used an LLM like ChatGPT for my code, I could maybe speed up the process but when a unique error comes up it will be on me to solve it. The web-based LLM is not well integrated into software like Lattice Radiant, but I can imagine a future where there exists some sort of AI assistant that can interface with your project and debug live. If this becomes true, then we will have to rethink our relationship with projects like this.
+
+ChatGPT's response to the error:
+
+That error means the synthesis tool doesn’t recognize the SB_HFOSC primitive. A few things are going on here:
+
+1. Device–specific primitive
+
+SB_HFOSC is a Lattice iCE40 family primitive. It isn’t a standard Verilog/SystemVerilog module; it’s a “hard IP” block that the synthesis tool maps directly to silicon.
+
+If you just paste the code in without telling the toolchain you’re targeting an iCE40UP5K, it won’t know about SB_HFOSC.
+
+2. Fix in Lattice toolchains
+
+Depending on your flow:
+
+Radiant / Diamond (official Lattice tools):
+Make sure your project is set to device iCE40UP5K (not “generic” Verilog simulation). Then SB_HFOSC should resolve automatically.
+
+Project IceStorm / Yosys / nextpnr (open source flow):
+Yosys recognizes SB_HFOSC when you target synth_ice40. For simulation, you may need to provide a blackbox or behavioral model yourself.
+
+3. Provide a simulation stub
+
+For simulation only, you can give the compiler a stub like this so it compiles cleanly:
+
+`ifndef SYNTHESIS
+module SB_HFOSC #(parameter CLKHF_DIV = "0b00") (
+    input  logic CLKHFEN,
+    input  logic CLKHFPU,
+    output logic CLKHF
+);
+    // Simple behavioral model: just drive a clock
+    // Here we use 10ns = 100 MHz as placeholder for simulation
+    initial CLKHF = 0;
+    always #10 CLKHF = ~CLKHF;
+endmodule
+`endif
+
+The real hardware build will ignore this because the synthesis tool knows the primitive.
+
+✅ Action steps for you:
+
+Make sure your project/device is set to Lattice iCE40UP5K.
+
+Use the real SB_HFOSC instantiation for synthesis.
+
+If you want to simulate in ModelSim/Verilator/etc., add a stub model like above.
+
+Do you want me to give you a complete top.sv that includes both the real primitive for synthesis and a simulation-friendly stub, so you don’t see this error again in simulation?
