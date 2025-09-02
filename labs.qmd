@@ -8,6 +8,11 @@ listing:
 ---
 
 ## Lab 1: FPGA and MCU Setup and Testing
+
+Completed September 2, 2025!
+
+Check out the lab report linked to the bottom of this page!
+
 ## Lab 2: Multiplexed 7-Segment Display
 ## Lab 3: Keypad Scanner
 ## Lab 4: Digital Audio

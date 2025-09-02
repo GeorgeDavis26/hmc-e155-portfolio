@@ -1,1 +1,98 @@
+---
+title: "Lab 1 Report"
+description: "FPGA and MCU Setup and Testing"
+author: "George Davis"
+date: "9/2/25"
+categories:
+  - reflection
+  - labreport
+draft: false
+format:
+  html:
+    other-links:
+      - text: Link to Github Repo with code
+        href: https://github.com/GeorgeDavis26/E155-Lab-1/tree/main/fpga/lab1_gd/source/impl_1
+---
 
+## Summary
+
+Lab 1 focused on setting up our MCU and FPGA board for the rest of the E155 class. Additionally, I wrote code to display the functionality of 3 SMT LEDs and a seven segment display using the breadboard adapter. My design met all requirements and I am excited to move on to the next lab!
+
+I spent 25 hours on this lab
+
+
+I would recommend addressing the ribbon cable shortage issue as soon as possible. I was noticing many unnecessary errrors arose from not having the propper wiring or broken jumpers between the ribbon cable female headers.
+
+## Circuit Schematic
+
+
+## Block Diagram and Schematic
+
+![](images/lab1_block-diagram.jpeg){width=3000}
+![](images/lab1_schematic.jpeg){width=3000}
+
+## Questa Wave Forms
+
+![top module](images/waveforms_top.jpeg){width=3000}
+
+![led_control module](images/waveforms_led.jpeg){width=3000}
+
+![seven_seg_disp module](images/waveforms_seg.jpeg){width=3000}
+
+
+# Seven Segment Display LED Current Calculations
+
+![](images/calcs.jpeg){width=3000}
+
+# AI Prototype
+
+I gave ChatGPT the following prompt
+
+Write SystemVerilog HDL to leverage the internal high speed oscillator in the Lattice UP5K FPGA and blink an LED at 2 Hz. Take full advantage of SystemVerilog syntax, for example, using logic instead of wire and reg.
+
+It responded with the following code
+
+module top (
+    output logic led    // drive LED pin
+);
+
+    // ========================
+    // Internal HFOSC instance
+    // ========================
+    logic clk_int;
+
+    SB_HFOSC #(
+        .CLKHF_DIV("0b00")  // 00 = /1 (48 MHz), 01 = /2 (24 MHz), 10 = /4 (12 MHz), 11 = /8 (6 MHz)
+    ) hfosc_inst (
+        .CLKHFEN(1'b1),     // enable oscillator
+        .CLKHFPU(1'b1),     // power up oscillator
+        .CLKHF(clk_int)     // output clock
+    );
+
+    // ========================
+    // Clock divider
+    // ========================
+    // Want 2 Hz blink → period = 0.5 s ON + 0.5 s OFF = 1 second full cycle.
+    // At 48 MHz: 48,000,000 cycles per second.
+    // Half-period = 24,000,000 cycles.
+    localparam int HALF_PERIOD = 24_000_000;
+
+    logic [$clog2(HALF_PERIOD)-1:0] counter = '0;
+
+    always_ff @(posedge clk_int) begin
+        if (counter == HALF_PERIOD-1) begin
+            counter <= '0;
+            led     <= ~led;  // toggle LED
+        end else begin
+            counter <= counter + 1;
+        end
+    end
+
+endmodule
+
+
+After creating a new Lattice Radiant project and sythesizing the file/ module that ChatGPT gave me the follow synthesis error was thrown.
+
+ERROR <35901063> - c:/users/gdavis/desktop/lab1_ai_prototype/source/impl_1/top.sv(16): instantiating unknown module SB_HFOSC. VERI-1063
+
+This occurred becuase I failed to set my project to the proper iCE40UP5K FPGA so therefore, the instantiation of SB_HFOSC couldn't reference anything. I knew to do this with my experience doing the lab, but if I were just blindly copying and pasting the code ChatGPT gave me, I would be completely stuck and need to reference the LLM again. After sending the error message to chat it provided me with the solution but I can imagine for a more complex issue Chat will struggle. This is why it is important to use LLMs with caution, especially if you are inexperienced with the subject at hand. These labs are complex and require a lot of details to complete correctly. If I used an LLM like ChatGPT for my code, I could maybe speed up the process but when a unique error comes up it will be on me to solve it. The web-based LLM is not well integrated into software like Lattice Radiant, but I can imagine a future where there exists some sort of AI assistant that can interface with your project and debug live. If this becomes true, then we will have to rethink our relationship with projects like this.

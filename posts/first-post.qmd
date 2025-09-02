@@ -11,7 +11,7 @@ draft: false
 
 ## Summary
 
-This week I learend how to better use git for academic use and to set up a quarto portfolio website on guthub pages. Additionally, I will be working on lab 1 where we will be setting up and programming our FPGA and MCU to run a simple task. 
+This week I learend how to better use git for academic use and to set up a quarto portfolio website on guthub pages. Additionally, I will be working on lab 1 where we will be setting up and programming our FPcdGA and MCU to run a simple task. 
 
 ## Reflections on Lab
 
