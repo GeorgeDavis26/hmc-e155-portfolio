@@ -125,8 +125,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#technical-documentation" id="toc-technical-documentation" class="nav-link" data-scroll-target="#technical-documentation">Technical Documentation</a></li>
   <li><a href="#block-diagram-and-schematic" id="toc-block-diagram-and-schematic" class="nav-link" data-scroll-target="#block-diagram-and-schematic">Block Diagram and Schematic</a></li>
-  <li><a href="#questa-wave-forms" id="toc-questa-wave-forms" class="nav-link" data-scroll-target="#questa-wave-forms">Questa Wave Forms</a></li>
   <li><a href="#seven-segment-display-led-current-calculations" id="toc-seven-segment-display-led-current-calculations" class="nav-link" data-scroll-target="#seven-segment-display-led-current-calculations">Seven Segment Display LED Current Calculations</a></li>
   <li><a href="#ai-prototype" id="toc-ai-prototype" class="nav-link" data-scroll-target="#ai-prototype">AI Prototype</a></li>
   </ul>
@@ -181,12 +181,26 @@ ul.task-list li input[type="checkbox"] {
 <p>I spent 25 hours on this lab</p>
 <p>I would recommend addressing the ribbon cable shortage issue as soon as possible. I was noticing many unnecessary errrors arose from not having the propper wiring or broken jumpers between the ribbon cable female headers.</p>
 </section>
+<section id="technical-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="technical-documentation">Technical Documentation</h2>
+<p>The source code for this lab can be found in the associated Github repository found by following the link on the righthand side of the page.</p>
+</section>
 <section id="block-diagram-and-schematic" class="level2">
 <h2 class="anchored" data-anchor-id="block-diagram-and-schematic">Block Diagram and Schematic</h2>
-<p><img src="images/lab1_block-diagram.jpeg" class="img-fluid" width="3000" alt="Figure 1"> <img src="images/lab1_schematic.jpeg" class="img-fluid" width="3000" alt="Figure 2"></p>
-</section>
-<section id="questa-wave-forms" class="level2">
-<h2 class="anchored" data-anchor-id="questa-wave-forms">Questa Wave Forms</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab1_block-diagram.jpeg" class="img-fluid figure-img" width="3000"></p>
+<figcaption>Figure 1: Block Diagram of System Verilog module desgin and heirarchy</figcaption>
+</figure>
+</div>
+<p>Figure 1 shows the System Verilog module design for this lab including the combiantion logic and the HSOC instantation to leverage the onboard oscilator</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab1_schematic.jpeg" class="img-fluid figure-img" width="3000"></p>
+<figcaption>Figure 2: Schematic of physical circuit layout along with blocks representing the combinational verilog code</figcaption>
+</figure>
+</div>
+<p>Figure 2 shows the physical layout of the circuit along with the pin names and numbers along with the component values and names as well. 100k ohm pull up resistors were used on the switching logic elements. ## Questa Wave Forms</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/waveforms_top.jpeg" class="img-fluid figure-img" width="3000"></p>
@@ -205,21 +219,25 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Figure 5: seven_seg_disp module</figcaption>
 </figure>
 </div>
+<p>Figures 3, 4, and 5 show the induvidual automatic testbench files run on questa. Notice 0 errors for all test vectors.</p>
 </section>
 <section id="seven-segment-display-led-current-calculations" class="level1">
 <h1>Seven Segment Display LED Current Calculations</h1>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/calcs.jpeg" class="img-fluid figure-img" width="3000"></p>
-<figcaption>Figure 6</figcaption>
+<figcaption>Figure 6: Current Calculations</figcaption>
 </figure>
 </div>
+<p>Figure 6 shows the currrent for a signle LED segment on the seven segment display and the total current draw of the entire component.</p>
 </section>
 <section id="ai-prototype" class="level1">
 <h1>AI Prototype</h1>
 <p>I gave ChatGPT the following prompt</p>
 <p>Write SystemVerilog HDL to leverage the internal high speed oscillator in the Lattice UP5K FPGA and blink an LED at 2 Hz. Take full advantage of SystemVerilog syntax, for example, using logic instead of wire and reg.</p>
-<p>It responded with the following code</p>
+<p>It responded with the following statement and code:</p>
+<p>Got it — you want SystemVerilog code for the Lattice iCE40UP5K (UP5K) FPGA that uses the internal high-speed oscillator (HFOSC) to blink an LED at 2 Hz. The UP5K has an internal oscillator that runs at 48 MHz, which you can instantiate using the SB_HFOSC primitive.</p>
+<p>Here’s a clean SystemVerilog example that makes full use of modern syntax (logic, always_ff, localparam, etc.):</p>
 <p>module top ( output logic led // drive LED pin );</p>
 <pre><code>// ========================
 // Internal HFOSC instance
@@ -253,6 +271,13 @@ always_ff @(posedge clk_int) begin
     end
 end</code></pre>
 <p>endmodule</p>
+<p>Key points:</p>
+<p>SB_HFOSC is the UP5K primitive for the internal high-speed oscillator.</p>
+<p>With .CLKHF_DIV(“0b00”), the oscillator runs at 48 MHz.</p>
+<p>Counter counts to 24,000,000 cycles = 0.5 seconds → toggles LED = 2 Hz blink rate.</p>
+<p>logic and always_ff are used for modern, synthesizable SystemVerilog style.</p>
+<p>👉 If you’d prefer to save resources, you could also use one of the divided clock options (like 12 MHz or 6 MHz) and scale the counter down accordingly.</p>
+<p>Would you like me to also show you a parameterized version where you can set the blink frequency (e.g.&nbsp;1 Hz, 5 Hz, 10 Hz) just by changing a parameter, without manually recomputing counter values?</p>
 <p>After creating a new Lattice Radiant project and sythesizing the file/ module that ChatGPT gave me the follow synthesis error was thrown.</p>
 <p>ERROR &lt;35901063&gt; - c:/users/gdavis/desktop/lab1_ai_prototype/source/impl_1/top.sv(16): instantiating unknown module SB_HFOSC. VERI-1063</p>
 <p>This occurred becuase I failed to set my project to the proper iCE40UP5K FPGA so therefore, the instantiation of SB_HFOSC couldn’t reference anything. I knew to do this with my experience doing the lab, but if I were just blindly copying and pasting the code ChatGPT gave me, I would be completely stuck and need to reference the LLM again. After sending the error message to chat it provided me with the solution but I can imagine for a more complex issue Chat will struggle. This is why it is important to use LLMs with caution, especially if you are inexperienced with the subject at hand. These labs are complex and require a lot of details to complete correctly. If I used an LLM like ChatGPT for my code, I could maybe speed up the process but when a unique error comes up it will be on me to solve it. The web-based LLM is not well integrated into software like Lattice Radiant, but I can imagine a future where there exists some sort of AI assistant that can interface with your project and debug live. If this becomes true, then we will have to rethink our relationship with projects like this.</p>
