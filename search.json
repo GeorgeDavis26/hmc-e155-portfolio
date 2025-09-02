@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "E155 Blog",
     "section": "",
-    "text": "Week 1 Reflections\n\n\nWelcome to my Quarto portfolio\n\n\n\n\n\nAug 26, 2025\n\n\nGeorge Davis\n\n\n\n\n\nNo matching items"
+    "text": "Week 2 Reflections\n\n\nFirst Micro-ps Lab\n\n\n\n\n\nSep 2, 2025\n\n\nGeorge Davis\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 1 Reflections\n\n\nWelcome to my Quarto portfolio\n\n\n\n\n\nAug 26, 2025\n\n\nGeorge Davis\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -68,6 +68,13 @@
     "title": "Lab 1 Report",
     "section": "Questa Wave Forms",
     "text": "Questa Wave Forms\n\n\n\nFigure 3: top module\n\n\n\n\n\nFigure 4: led_control module\n\n\n\n\n\nFigure 5: seven_seg_disp module\n\n\nFigures 3, 4, and 5 show the induvidual automatic testbench files run on questa. Notice 0 errors for all test vectors."
+  },
+  {
+    "objectID": "posts/first-post copy.html",
+    "href": "posts/first-post copy.html",
+    "title": "Week 2 Reflections",
+    "section": "",
+    "text": "This week I completed my first micro-ps lab! This was very satisfying but difficult. I needed to brush off my surface-mount soldering and System Verilog skills quickly in order to meet the fast-approaching deadline. This was my first time using the Upduino FPGA board and the Lattice Radiant programmer to complete any task. There is always a learning curve with new software, but as I gain more experience in the computer engineering field, the curve steepens and my ability to learn quickly increases.\nLooking past micro-ps, this was the first week of my senior year! I have set a goal for myself to apply for at least one job per day to give myself the best possible chances of landing something I am both passionate about and in the location I want, the Bay Area. I would be very happy to work at a company that requires me to do some HDL programming or stress the skills learned in E155. This week, I am going back home to attend my cousin’s wedding in Walla Walla, Washington. I have installed the Fusion Virtual Machine to be able to use the Lattice Radiant and Questa software for the upcoming lab. This will be a challenge, but I am confident that I am up to the task!"
   },
   {
     "objectID": "labs.html",
