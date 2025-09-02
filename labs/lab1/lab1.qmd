@@ -16,7 +16,7 @@ format:
 
 ## Summary
 
-Lab 1 focused on setting up our MCU and FPGA board for the rest of the E155 class. Additionally, I wrote code to display the functionality of 3 SMT LEDs and a seven segment display using the breadboard adapter. My design met all requirements and I am excited to move on to the next lab!
+Lab 1 focused on setting up our MCU and FPGA board for the rest of the E155 class. Additionally, I wrote code to display the functionality of 3 SMT LEDs and a seven segment display using the breadboard adapter. My design met all requirements and I am excited to move on to the next lab! I ran into one issue where my 3.3V rail  is at 2.7V not 3.3V on my FPGA, this needs to be addressed in the future but this lab still functions. I suspect a programming setting I missed...
 
 I spent 25 hours on this lab
 
