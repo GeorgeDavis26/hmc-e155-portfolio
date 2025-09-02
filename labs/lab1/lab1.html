@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="George Davis">
+<meta name="dcterms.date" content="2025-09-02">
+<meta name="description" content="FPGA and MCU Setup and Testing">
 
-<title>lab1 – E155 Portfolio</title>
+<title>Lab 1 Report – E155 Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,17 +119,145 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#circuit-schematic" id="toc-circuit-schematic" class="nav-link" data-scroll-target="#circuit-schematic">Circuit Schematic</a></li>
+  <li><a href="#block-diagram-and-schematic" id="toc-block-diagram-and-schematic" class="nav-link" data-scroll-target="#block-diagram-and-schematic">Block Diagram and Schematic</a></li>
+  <li><a href="#questa-wave-forms" id="toc-questa-wave-forms" class="nav-link" data-scroll-target="#questa-wave-forms">Questa Wave Forms</a></li>
+  <li><a href="#seven-segment-display-led-current-calculations" id="toc-seven-segment-display-led-current-calculations" class="nav-link" data-scroll-target="#seven-segment-display-led-current-calculations">Seven Segment Display LED Current Calculations</a></li>
+  <li><a href="#ai-prototype" id="toc-ai-prototype" class="nav-link" data-scroll-target="#ai-prototype">AI Prototype</a></li>
+  </ul>
+<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://github.com/GeorgeDavis26/E155-Lab-1/tree/main/fpga/lab1_gd/source/impl_1"><i class="bi bi-link-45deg"></i>Link to Github Repo with code</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lab 1 Report</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">reflection</div>
+    <div class="quarto-category">labreport</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    FPGA and MCU Setup and Testing
+  </div>
+</div>
 
 
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>George Davis </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 2, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
+</header>
 
 
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>Lab 1 focused on setting up our MCU and FPGA board for the rest of the E155 class. Additionally, I wrote code to display the functionality of 3 SMT LEDs and a seven segment display using the breadboard adapter. My design met all requirements and I am excited to move on to the next lab!</p>
+<p>I spent 25 hours on this lab</p>
+<p>I would recommend addressing the ribbon cable shortage issue as soon as possible. I was noticing many unnecessary errrors arose from not having the propper wiring or broken jumpers between the ribbon cable female headers.</p>
+</section>
+<section id="circuit-schematic" class="level2">
+<h2 class="anchored" data-anchor-id="circuit-schematic">Circuit Schematic</h2>
+</section>
+<section id="block-diagram-and-schematic" class="level2">
+<h2 class="anchored" data-anchor-id="block-diagram-and-schematic">Block Diagram and Schematic</h2>
+<p><img src="images/lab1_block-diagram.jpeg" class="img-fluid" width="3000"> <img src="images/lab1_schematic.jpeg" class="img-fluid" width="3000"></p>
+</section>
+<section id="questa-wave-forms" class="level2">
+<h2 class="anchored" data-anchor-id="questa-wave-forms">Questa Wave Forms</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/waveforms_top.jpeg" class="img-fluid figure-img" width="3000"></p>
+<figcaption>top module</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/waveforms_led.jpeg" class="img-fluid figure-img" width="3000"></p>
+<figcaption>led_control module</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/waveforms_seg.jpeg" class="img-fluid figure-img" width="3000"></p>
+<figcaption>seven_seg_disp module</figcaption>
+</figure>
+</div>
+</section>
+<section id="seven-segment-display-led-current-calculations" class="level1">
+<h1>Seven Segment Display LED Current Calculations</h1>
+<p><img src="images/calcs.jpeg" class="img-fluid" width="3000"></p>
+</section>
+<section id="ai-prototype" class="level1">
+<h1>AI Prototype</h1>
+<p>I gave ChatGPT the following prompt</p>
+<p>Write SystemVerilog HDL to leverage the internal high speed oscillator in the Lattice UP5K FPGA and blink an LED at 2 Hz. Take full advantage of SystemVerilog syntax, for example, using logic instead of wire and reg.</p>
+<p>It responded with the following code</p>
+<p>module top ( output logic led // drive LED pin );</p>
+<pre><code>// ========================
+// Internal HFOSC instance
+// ========================
+logic clk_int;
+
+SB_HFOSC #(
+    .CLKHF_DIV("0b00")  // 00 = /1 (48 MHz), 01 = /2 (24 MHz), 10 = /4 (12 MHz), 11 = /8 (6 MHz)
+) hfosc_inst (
+    .CLKHFEN(1'b1),     // enable oscillator
+    .CLKHFPU(1'b1),     // power up oscillator
+    .CLKHF(clk_int)     // output clock
+);
+
+// ========================
+// Clock divider
+// ========================
+// Want 2 Hz blink → period = 0.5 s ON + 0.5 s OFF = 1 second full cycle.
+// At 48 MHz: 48,000,000 cycles per second.
+// Half-period = 24,000,000 cycles.
+localparam int HALF_PERIOD = 24_000_000;
+
+logic [$clog2(HALF_PERIOD)-1:0] counter = '0;
+
+always_ff @(posedge clk_int) begin
+    if (counter == HALF_PERIOD-1) begin
+        counter &lt;= '0;
+        led     &lt;= ~led;  // toggle LED
+    end else begin
+        counter &lt;= counter + 1;
+    end
+end</code></pre>
+<p>endmodule</p>
+<p>After creating a new Lattice Radiant project and sythesizing the file/ module that ChatGPT gave me the follow synthesis error was thrown.</p>
+<p>ERROR &lt;35901063&gt; - c:/users/gdavis/desktop/lab1_ai_prototype/source/impl_1/top.sv(16): instantiating unknown module SB_HFOSC. VERI-1063</p>
+<p>This occurred becuase I failed to set my project to the proper iCE40UP5K FPGA so therefore, the instantiation of SB_HFOSC couldn’t reference anything. I knew to do this with my experience doing the lab, but if I were just blindly copying and pasting the code ChatGPT gave me, I would be completely stuck and need to reference the LLM again. After sending the error message to chat it provided me with the solution but I can imagine for a more complex issue Chat will struggle. This is why it is important to use LLMs with caution, especially if you are inexperienced with the subject at hand. These labs are complex and require a lot of details to complete correctly. If I used an LLM like ChatGPT for my code, I could maybe speed up the process but when a unique error comes up it will be on me to solve it. The web-based LLM is not well integrated into software like Lattice Radiant, but I can imagine a future where there exists some sort of AI assistant that can interface with your project and debug live. If this becomes true, then we will have to rethink our relationship with projects like this.</p>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

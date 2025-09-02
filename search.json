@@ -18,14 +18,14 @@
     "href": "posts/first-post.html",
     "title": "Week 1 Reflections",
     "section": "",
-    "text": "This week I learend how to better use git for academic use and to set up a quarto portfolio website on guthub pages. Additionally, I will be working on lab 1 where we will be setting up and programming our FPGA and MCU to run a simple task."
+    "text": "This week I learend how to better use git for academic use and to set up a quarto portfolio website on guthub pages. Additionally, I will be working on lab 1 where we will be setting up and programming our FPcdGA and MCU to run a simple task."
   },
   {
     "objectID": "posts/first-post.html#summary",
     "href": "posts/first-post.html#summary",
     "title": "Week 1 Reflections",
     "section": "",
-    "text": "This week I learend how to better use git for academic use and to set up a quarto portfolio website on guthub pages. Additionally, I will be working on lab 1 where we will be setting up and programming our FPGA and MCU to run a simple task."
+    "text": "This week I learend how to better use git for academic use and to set up a quarto portfolio website on guthub pages. Additionally, I will be working on lab 1 where we will be setting up and programming our FPcdGA and MCU to run a simple task."
   },
   {
     "objectID": "posts/first-post.html#reflections-on-lab",
@@ -33,6 +33,55 @@
     "title": "Week 1 Reflections",
     "section": "Reflections on Lab",
     "text": "Reflections on Lab\nI have yet to complete lab one but have made significant progress… Learning git was slow at first but I am excited for the functionality it can provide my academic and everyday life!"
+  },
+  {
+    "objectID": "labs/lab1/lab1.html",
+    "href": "labs/lab1/lab1.html",
+    "title": "Lab 1 Report",
+    "section": "",
+    "text": "Lab 1 focused on setting up our MCU and FPGA board for the rest of the E155 class. Additionally, I wrote code to display the functionality of 3 SMT LEDs and a seven segment display using the breadboard adapter. My design met all requirements and I am excited to move on to the next lab!\nI spent 25 hours on this lab\nI would recommend addressing the ribbon cable shortage issue as soon as possible. I was noticing many unnecessary errrors arose from not having the propper wiring or broken jumpers between the ribbon cable female headers."
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#summary",
+    "href": "labs/lab1/lab1.html#summary",
+    "title": "Lab 1 Report",
+    "section": "",
+    "text": "Lab 1 focused on setting up our MCU and FPGA board for the rest of the E155 class. Additionally, I wrote code to display the functionality of 3 SMT LEDs and a seven segment display using the breadboard adapter. My design met all requirements and I am excited to move on to the next lab!\nI spent 25 hours on this lab\nI would recommend addressing the ribbon cable shortage issue as soon as possible. I was noticing many unnecessary errrors arose from not having the propper wiring or broken jumpers between the ribbon cable female headers."
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#circuit-schematic",
+    "href": "labs/lab1/lab1.html#circuit-schematic",
+    "title": "Lab 1 Report",
+    "section": "Circuit Schematic",
+    "text": "Circuit Schematic"
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#block-diagram-and-schematic",
+    "href": "labs/lab1/lab1.html#block-diagram-and-schematic",
+    "title": "Lab 1 Report",
+    "section": "Block Diagram and Schematic",
+    "text": "Block Diagram and Schematic"
+  },
+  {
+    "objectID": "labs/lab1/lab1.html#questa-wave-forms",
+    "href": "labs/lab1/lab1.html#questa-wave-forms",
+    "title": "Lab 1 Report",
+    "section": "Questa Wave Forms",
+    "text": "Questa Wave Forms\n\n\n\ntop module\n\n\n\n\n\nled_control module\n\n\n\n\n\nseven_seg_disp module"
+  },
+  {
+    "objectID": "labs.html",
+    "href": "labs.html",
+    "title": "E155 Labs",
+    "section": "",
+    "text": "Completed September 2, 2025!\nCheck out the lab report linked to the bottom of this page!"
+  },
+  {
+    "objectID": "labs.html#lab-1-fpga-and-mcu-setup-and-testing",
+    "href": "labs.html#lab-1-fpga-and-mcu-setup-and-testing",
+    "title": "E155 Labs",
+    "section": "",
+    "text": "Completed September 2, 2025!\nCheck out the lab report linked to the bottom of this page!"
   },
   {
     "objectID": "labs.html#lab-2-multiplexed-7-segment-display",
