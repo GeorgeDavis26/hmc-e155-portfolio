@@ -36,6 +36,7 @@ Figure 1 shows the System Verilog module design for this lab including the combi
 ![Figure 2: Schematic of physical circuit layout along with blocks representing the combinational verilog code](images/lab1_schematic.jpeg){width=3000}
 
 Figure 2 shows the physical layout of the circuit along with the pin names and numbers along with the component values and names as well. 100k ohm pull up resistors were used on the switching logic elements. 
+
 ## Questa Wave Forms
 
 ![Figure 3: top module](images/waveforms_top.jpeg){width=3000}
