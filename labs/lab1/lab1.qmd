@@ -23,26 +23,23 @@ I spent 25 hours on this lab
 
 I would recommend addressing the ribbon cable shortage issue as soon as possible. I was noticing many unnecessary errrors arose from not having the propper wiring or broken jumpers between the ribbon cable female headers.
 
-## Circuit Schematic
-
-
 ## Block Diagram and Schematic
 
-![](images/lab1_block-diagram.jpeg){width=3000}
-![](images/lab1_schematic.jpeg){width=3000}
+![Figure 1](images/lab1_block-diagram.jpeg){width=3000}
+![Figure 2](images/lab1_schematic.jpeg){width=3000}
 
 ## Questa Wave Forms
 
-![top module](images/waveforms_top.jpeg){width=3000}
+![Figure 3: top module](images/waveforms_top.jpeg){width=3000}
 
-![led_control module](images/waveforms_led.jpeg){width=3000}
+![Figure 4: led_control module](images/waveforms_led.jpeg){width=3000}
 
-![seven_seg_disp module](images/waveforms_seg.jpeg){width=3000}
+![Figure 5: seven_seg_disp module](images/waveforms_seg.jpeg){width=3000}
 
 
 # Seven Segment Display LED Current Calculations
 
-![](images/calcs.jpeg){width=3000}
+![Figure 6](images/calcs.jpeg){width=3000}
 
 # AI Prototype
 
