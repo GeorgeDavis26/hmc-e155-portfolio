@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="George Davis">
+<meta name="dcterms.date" content="2025-09-09">
+<meta name="description" content="Multiplexed 7-Segment Display">
 
-<title>E155 Labs – E155 Portfolio</title>
+<title>Lab 2 Report – E155 Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,67 +70,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -139,7 +82,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">E155 Portfolio</span>
     </a>
   </div>
@@ -150,19 +93,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./labs.html" aria-current="page"> 
+    <a class="nav-link" href="../../labs.html"> 
 <span class="menu-text">Labs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link" href="../../resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
 </ul>
@@ -176,22 +119,56 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#technical-documentation" id="toc-technical-documentation" class="nav-link" data-scroll-target="#technical-documentation">Technical Documentation</a></li>
+  <li><a href="#block-diagram-and-schematic" id="toc-block-diagram-and-schematic" class="nav-link" data-scroll-target="#block-diagram-and-schematic">Block Diagram and Schematic</a></li>
+  <li><a href="#seven-segment-display-led-current-calculations" id="toc-seven-segment-display-led-current-calculations" class="nav-link" data-scroll-target="#seven-segment-display-led-current-calculations">Seven Segment Display LED Current Calculations</a></li>
+  <li><a href="#ai-prototype" id="toc-ai-prototype" class="nav-link" data-scroll-target="#ai-prototype">AI Prototype</a>
+  <ul class="collapse">
+  <li><a href="#reflect" id="toc-reflect" class="nav-link" data-scroll-target="#reflect">Reflect</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://github.com/GeorgeDavis26/e155-lab-2/tree/main/fpga/src"><i class="bi bi-link-45deg"></i>Link to Github Repo with code</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">E155 Labs</h1>
-</div>
+<h1 class="title">Lab 2 Report</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">reflection</div>
+    <div class="quarto-category">labreport</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Multiplexed 7-Segment Display
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>George Davis </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 9, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -201,65 +178,196 @@ window.Quarto = {
 </header>
 
 
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>Lab 2 focused on creating a multiplexed seven segment display by using the internal high speed oscillator to create a low frequency enable which control a mux and demux module. My design meets the proficiency requirements but I am missing the testbenches for most of my modules.</p>
+<p>I spent 10 hours on this lab</p>
+</section>
+<section id="technical-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="technical-documentation">Technical Documentation</h2>
+<p>The source code for this lab can be found in the associated Github repository found by following the link on the righthand side of the page.</p>
+</section>
+<section id="block-diagram-and-schematic" class="level2">
+<h2 class="anchored" data-anchor-id="block-diagram-and-schematic">Block Diagram and Schematic</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab2_block-diagram.jpeg" class="img-fluid figure-img" width="3000"></p>
+<figcaption>Figure 1: Block Diagram of System Verilog module desgin and heirarchy</figcaption>
+</figure>
+</div>
+<p>Figure 1 shows the System Verilog module design for this lab including the combiantional logic, sequential logic, and the HSOSC instantation to leverage the onboard oscilator</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab2_schematic.jpeg" class="img-fluid figure-img" width="3000"></p>
+<figcaption>Figure 2: Schematic of physical circuit layout along with blocks representing the combinational verilog code</figcaption>
+</figure>
+</div>
+<p>Figure 2 shows the physical layout of the circuit along with the pin names and numbers along with the component values and names as well. 100k ohm pull up resistors were used on the switching logic elements.</p>
+</section>
+<section id="seven-segment-display-led-current-calculations" class="level1">
+<h1>Seven Segment Display LED Current Calculations</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/calcs.jpeg" class="img-fluid figure-img" width="3000"></p>
+<figcaption>Figure 6: Current Calculations</figcaption>
+</figure>
+</div>
+<p>Figure 6 shows the calculated current for each of the GPIO pin use cases. All current draw and sink values are within the current specs for a single GPIO pin.</p>
+</section>
+<section id="ai-prototype" class="level1">
+<h1>AI Prototype</h1>
+<p>I gave ChatGPT the following prompt</p>
+<p>Write SystemVerilog HDL to time multiplex a single seven segment decoder (that decodes from four bits to a common anode seven segment display) to decode two sets of input bits and drive two sets of seven output bits.</p>
+<p>It responded with the following statement and statement and code:</p>
+<p>Here’s a clean, self-contained SystemVerilog design that reuses one common-anode (active-low) 7-segment decoder to service two 4-bit inputs. It time-multiplexes the single decoder, latching the result for each digit on alternating refresh ticks so you get two independent 7-bit outputs.</p>
+<p>//—————————————————————————— // sevenseg_decoder_ca // - Common-anode 7-seg decoder (active-low outputs). // - Segment order: {a,b,c,d,e,f,g} = [6:0]. ‘0’ turns a segment ON. //—————————————————————————— module sevenseg_decoder_ca ( input logic [3:0] bin, // 0..15 output logic [6:0] seg_n // active-low segments {a,b,c,d,e,f,g} ); always_comb begin unique case (bin) 4’h0: seg_n = 7’b0000001; // 0: a b c d e f on, g off 4’h1: seg_n = 7’b1001111; // 1 4’h2: seg_n = 7’b0010010; // 2 4’h3: seg_n = 7’b0000110; // 3 4’h4: seg_n = 7’b1001100; // 4 4’h5: seg_n = 7’b0100100; // 5 4’h6: seg_n = 7’b0100000; // 6 4’h7: seg_n = 7’b0001111; // 7 4’h8: seg_n = 7’b0000000; // 8 4’h9: seg_n = 7’b0000100; // 9 4’hA: seg_n = 7’b0001000; // A 4’hB: seg_n = 7’b1100000; // b 4’hC: seg_n = 7’b0110001; // C 4’hD: seg_n = 7’b1000010; // d 4’hE: seg_n = 7’b0110000; // E 4’hF: seg_n = 7’b0111000; // F default: seg_n = 7’b1111111; // all off endcase end endmodule</p>
+<p>//—————————————————————————— // sevenseg_mux2 // - Time-multiplex a single decoder to drive two 7-seg outputs. // - Latches the decoder result for each digit on alternating ticks. // - Parameters let you set the refresh rate and clock frequency. //—————————————————————————— module sevenseg_mux2 #( parameter int unsigned CLK_HZ = 12_000_000, // input clock (Hz) parameter int unsigned REFRESH_HZ = 1000 // per-digit refresh (Hz) ) ( input logic clk, input logic rst_n,</p>
+<pre><code>input  logic [3:0]  nibble0,   // first value to display
+input  logic [3:0]  nibble1,   // second value to display
+
+// Independent 7-bit outputs for each "digit" (active-low, common anode)
+output logic [6:0]  seg0_n,    // latched output for nibble0
+output logic [6:0]  seg1_n     // latched output for nibble1</code></pre>
+<p>); // ————————————————————————- // Refresh tick generator (toggle ‘sel’ at REFRESH_HZ per digit) // The decoder is evaluated every half-period so each digit updates at // REFRESH_HZ, and the shared decoder runs at 2<em>REFRESH_HZ. // ————————————————————————- localparam int unsigned TICKS_PER_TOGGLE = (CLK_HZ / (2</em>REFRESH_HZ)); localparam int CNT_W = (TICKS_PER_TOGGLE &lt;= 1) ? 1 : $clog2(TICKS_PER_TOGGLE);</p>
+<pre><code>logic [CNT_W-1:0] cnt;
+logic             sel;   // 0 -&gt; update seg0, 1 -&gt; update seg1
+logic             tick;
+
+always_ff @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+        cnt  &lt;= '0;
+        tick &lt;= 1'b0;
+    end else begin
+        if (cnt == TICKS_PER_TOGGLE-1) begin
+            cnt  &lt;= '0;
+            tick &lt;= 1'b1;
+        end else begin
+            cnt  &lt;= cnt + 1'b1;
+            tick &lt;= 1'b0;
+        end
+    end
+end
+
+// Toggle which digit we're servicing on each tick
+always_ff @(posedge clk or negedge rst_n) begin
+    if (!rst_n) sel &lt;= 1'b0;
+    else if (tick) sel &lt;= ~sel;
+end
+
+// -------------------------------------------------------------------------
+// Single shared decoder instance
+// -------------------------------------------------------------------------
+logic [3:0]  muxed_nibble;
+logic [6:0]  dec_out_n;
+
+assign muxed_nibble = sel ? nibble1 : nibble0;
+
+sevenseg_decoder_ca u_dec (
+    .bin   (muxed_nibble),
+    .seg_n (dec_out_n)
+);
+
+// -------------------------------------------------------------------------
+// Latch the decoder's output into the appropriate digit register
+// Only the selected digit updates on each tick; the other holds steady.
+// -------------------------------------------------------------------------
+always_ff @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+        seg0_n &lt;= 7'b1111111; // all off
+        seg1_n &lt;= 7'b1111111; // all off
+    end else if (tick) begin
+        if (sel) seg1_n &lt;= dec_out_n; // we just decoded nibble1
+        else     seg0_n &lt;= dec_out_n; // we just decoded nibble0
+    end
+end</code></pre>
+<p>endmodule</p>
+<p>How it works (quick notes)</p>
+<p>sevenseg_decoder_ca is the only decoder. It produces active-low segment lines {a,b,c,d,e,f,g} for a common-anode display.</p>
+<p>sevenseg_mux2 creates a refresh tick at 2*REFRESH_HZ (so each digit updates at REFRESH_HZ). On each tick it:</p>
+<p>selects either nibble0 or nibble1,</p>
+<p>runs the single decoder,</p>
+<p>latches the result into seg0_n or seg1_n.</p>
+<p>Outputs seg0_n and seg1_n are two independent 7-bit buses that hold steady between their refresh updates, so downstream logic (or two separate displays) can use them without needing any additional enable strobes.</p>
+<p>If your board shares the segment lines and uses per-digit enables (common in dual-digit modules), you can instead drive one 7-bit bus plus two digit-enable lines; but since you asked for two sets of seven output bits, the above keeps them separate while still reusing a single decoder.</p>
+<p>After this response I uploaded three of my lab 2 sv modules and gave it a similar prompt seen below:</p>
+<p>Write SystemVerilog HDL to time multiplex a single seven segment decoder (that decodes from four bits to a common anode seven segment display) to decode two sets of input bits and drive two sets of seven output bits. Use the seven segment decoder and oscillator provided in the attached files.</p>
+<p>Great — I see you’ve uploaded three .sv files. To give you exactly what you need, I’ll build a top-level module that instantiates the oscillator (from your switch_mux.sv), and the seven-segment decoder (from seven_seg_disp.sv), then multiplexes the inputs so only one decoder instance is used, but it produces two sets of outputs.</p>
+<p>Here’s how I’d structure it:</p>
+<p>Oscillator: drives the multiplexing clock (refresh rate).</p>
+<p>Mux logic: alternates between in0 and in1.</p>
+<p>Decoder: instantiated once, shared between inputs.</p>
+<p>Registers: store the most recent decoded result for each digit.</p>
+<p>//—————————————————————————– // Top-level: two-digit time-multiplexed seven segment driver // Reuses a single seven-segment decoder to produce two outputs //—————————————————————————–</p>
+<p>module top_two_digit ( input logic clk, // main system clock input logic rst_n, // active-low reset input logic [3:0] nibble0, // first 4-bit input input logic [3:0] nibble1, // second 4-bit input</p>
+<pre><code>output logic [6:0] seg0,       // decoded segments for nibble0
+output logic [6:0] seg1        // decoded segments for nibble1</code></pre>
+<p>);</p>
+<pre><code>// -------------------------------------------------------------------------
+// Oscillator / refresh tick generator
+// Assuming your "switch_mux.sv" or another file gives a divided clock
+// Use that module to create `tick` for multiplexing
+// -------------------------------------------------------------------------
+logic tick;
+switch_mux u_clkdiv (
+    .clk_in (clk),
+    .rst_n  (rst_n),
+    .tick   (tick)   // provide a ~1kHz enable pulse
+);
+
+// -------------------------------------------------------------------------
+// Shared seven segment decoder
+// -------------------------------------------------------------------------
+logic [3:0] nibble_mux;
+logic [6:0] seg_dec;
+
+seven_seg_disp u_dec (
+    .bin (nibble_mux),
+    .seg (seg_dec)   // active-low outputs for CA display
+);
+
+// -------------------------------------------------------------------------
+// Multiplex between inputs, latch into outputs
+// -------------------------------------------------------------------------
+logic sel;   // toggles between 0 and 1
+
+always_ff @(posedge clk or negedge rst_n) begin
+    if (!rst_n)
+        sel &lt;= 1'b0;
+    else if (tick)
+        sel &lt;= ~sel;
+end
+
+assign nibble_mux = sel ? nibble1 : nibble0;
+
+always_ff @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+        seg0 &lt;= 7'h7F; // all off
+        seg1 &lt;= 7'h7F;
+    end else if (tick) begin
+        if (sel)
+            seg1 &lt;= seg_dec; // update digit1
+        else
+            seg0 &lt;= seg_dec; // update digit0
+    end
+end</code></pre>
+<p>endmodule</p>
+<p>✅ This top module does what you asked:</p>
+<p>Only one decoder (seven_seg_disp) is used.</p>
+<p>The oscillator (switch_mux) generates a refresh tick.</p>
+<p>On each tick, we feed the decoder either nibble0 or nibble1.</p>
+<p>The decoded value is latched into seg0 or seg1.</p>
+<p>Would you like me to integrate directly with the exact ports and naming from your uploaded seven_seg_disp.sv and switch_mux.sv (so it compiles with no edits), or do you just want this template structure?</p>
+<section id="reflect" class="level2">
+<h2 class="anchored" data-anchor-id="reflect">Reflect</h2>
+<p>The AI prototype was synthesized in the Lattice Radiant Software with minimal warnings. In general, I was impressed with ChatGPT’s code. I can’t be certain that the code works until I run a sim or verify the functionality on a working physical FPGA, but by inspection, it seems to function. However, with my relatively experienced knowledge base of System Verilog and FPGAs, the code used syntax and keywords that I was not used to. I think if I were to use this code to perform the function of my lab, I would not be able to debug as rapidly as I did with my own code. A HUGE benefit of writing your own code in digital design is being able to discern between a software and a hardware issue. If I didn’t write the code myself, I would likely waste a lot more time debugging. This is only true in my era of limited experience. I can imagine a hardware engineering pro with years of experience could understand and absorb the code the LLM gave very quickly to the point where they would understand it like their own. To some extent, it’s like a junior developer wrote code for you. Those skills exist in the world, but they are hard fought, and I am not there yet!</p>
+<p>A piece of syntax that ChatGPT used that I am unfamiliar with came in its instantiation of TICKS_PER_TOGGLE, where it defined a “localparam int unsigned”. I could make a guess at what this is, but really have no idea what it means to the level that is necessary to be able to interact with it once an issue inevitably comes up. What I have gathered from this class thus far is that NOTHING works on the first try, and problem-solving is almost necessary. If I can’t understand the code, it is useless.</p>
+<p>After I uploaded my own sv files, the code the LLM produced was much more understandable. If I enter the industry or ever have an ambitious personal project, I think this is the best method to make sure the LLM gives me something I can understand and not reference some decade-old old stackoverflow code from a senior engineer.</p>
 
 
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="cmVmbGVjdGlvbiUyQ2xhYnJlcG9ydA==" data-listing-date-sort="1757401200000" data-listing-file-modified-sort="1757439572491" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2714">
-<div class="thumbnail"><a href="./labs/lab2/lab2.html" class="no-external">
-
-<p class="card-img-top"><img src="labs/lab2/images/lab2_block-diagram.jpeg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./labs/lab2/lab2.html" class="no-external">Lab 2 Report</a>
-</h3>
-<div class="delink listing-description"><a href="./labs/lab2/lab2.html" class="no-external">
-<p>Multiplexed 7-Segment Display</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./labs/lab2/lab2.html" class="no-external">
-<div class="listing-date">
-Sep 9, 2025
-</div>
-<div class="listing-author">
-George Davis
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="cmVmbGVjdGlvbiUyQ2xhYnJlcG9ydA==" data-listing-date-sort="1756796400000" data-listing-file-modified-sort="1756862659376" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1051">
-<div class="thumbnail"><a href="./labs/lab1/lab1.html" class="no-external">
-
-<p class="card-img-top"><img src="labs/lab1/images/lab1_block-diagram.jpeg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./labs/lab1/lab1.html" class="no-external">Lab 1 Report</a>
-</h3>
-<div class="delink listing-description"><a href="./labs/lab1/lab1.html" class="no-external">
-<p>FPGA and MCU Setup and Testing</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./labs/lab1/lab1.html" class="no-external">
-<div class="listing-date">
-Sep 2, 2025
-</div>
-<div class="listing-author">
-George Davis
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

@@ -35,6 +35,41 @@
     "text": "Reflections on Lab\nI have yet to complete lab one but have made significant progress… Learning git was slow at first but I am excited for the functionality it can provide my academic and everyday life!"
   },
   {
+    "objectID": "labs/lab2/lab2.html",
+    "href": "labs/lab2/lab2.html",
+    "title": "Lab 2 Report",
+    "section": "",
+    "text": "Lab 2 focused on creating a multiplexed seven segment display by using the internal high speed oscillator to create a low frequency enable which control a mux and demux module. My design meets the proficiency requirements but I am missing the testbenches for most of my modules.\nI spent 10 hours on this lab"
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#summary",
+    "href": "labs/lab2/lab2.html#summary",
+    "title": "Lab 2 Report",
+    "section": "",
+    "text": "Lab 2 focused on creating a multiplexed seven segment display by using the internal high speed oscillator to create a low frequency enable which control a mux and demux module. My design meets the proficiency requirements but I am missing the testbenches for most of my modules.\nI spent 10 hours on this lab"
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#technical-documentation",
+    "href": "labs/lab2/lab2.html#technical-documentation",
+    "title": "Lab 2 Report",
+    "section": "Technical Documentation",
+    "text": "Technical Documentation\nThe source code for this lab can be found in the associated Github repository found by following the link on the righthand side of the page."
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#block-diagram-and-schematic",
+    "href": "labs/lab2/lab2.html#block-diagram-and-schematic",
+    "title": "Lab 2 Report",
+    "section": "Block Diagram and Schematic",
+    "text": "Block Diagram and Schematic\n\n\n\nFigure 1: Block Diagram of System Verilog module desgin and heirarchy\n\n\nFigure 1 shows the System Verilog module design for this lab including the combiantional logic, sequential logic, and the HSOSC instantation to leverage the onboard oscilator\n\n\n\nFigure 2: Schematic of physical circuit layout along with blocks representing the combinational verilog code\n\n\nFigure 2 shows the physical layout of the circuit along with the pin names and numbers along with the component values and names as well. 100k ohm pull up resistors were used on the switching logic elements."
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#reflect",
+    "href": "labs/lab2/lab2.html#reflect",
+    "title": "Lab 2 Report",
+    "section": "Reflect",
+    "text": "Reflect\nThe AI prototype was synthesized in the Lattice Radiant Software with minimal warnings. In general, I was impressed with ChatGPT’s code. I can’t be certain that the code works until I run a sim or verify the functionality on a working physical FPGA, but by inspection, it seems to function. However, with my relatively experienced knowledge base of System Verilog and FPGAs, the code used syntax and keywords that I was not used to. I think if I were to use this code to perform the function of my lab, I would not be able to debug as rapidly as I did with my own code. A HUGE benefit of writing your own code in digital design is being able to discern between a software and a hardware issue. If I didn’t write the code myself, I would likely waste a lot more time debugging. This is only true in my era of limited experience. I can imagine a hardware engineering pro with years of experience could understand and absorb the code the LLM gave very quickly to the point where they would understand it like their own. To some extent, it’s like a junior developer wrote code for you. Those skills exist in the world, but they are hard fought, and I am not there yet!\nA piece of syntax that ChatGPT used that I am unfamiliar with came in its instantiation of TICKS_PER_TOGGLE, where it defined a “localparam int unsigned”. I could make a guess at what this is, but really have no idea what it means to the level that is necessary to be able to interact with it once an issue inevitably comes up. What I have gathered from this class thus far is that NOTHING works on the first try, and problem-solving is almost necessary. If I can’t understand the code, it is useless.\nAfter I uploaded my own sv files, the code the LLM produced was much more understandable. If I enter the industry or ever have an ambitious personal project, I think this is the best method to make sure the LLM gives me something I can understand and not reference some decade-old old stackoverflow code from a senior engineer."
+  },
+  {
     "objectID": "labs/lab1/lab1.html",
     "href": "labs/lab1/lab1.html",
     "title": "Lab 1 Report",
@@ -81,56 +116,7 @@
     "href": "labs.html",
     "title": "E155 Labs",
     "section": "",
-    "text": "Completed September 2, 2025!\nCheck out the lab report linked to the bottom of this page!"
-  },
-  {
-    "objectID": "labs.html#lab-1-fpga-and-mcu-setup-and-testing",
-    "href": "labs.html#lab-1-fpga-and-mcu-setup-and-testing",
-    "title": "E155 Labs",
-    "section": "",
-    "text": "Completed September 2, 2025!\nCheck out the lab report linked to the bottom of this page!"
-  },
-  {
-    "objectID": "labs.html#lab-2-multiplexed-7-segment-display",
-    "href": "labs.html#lab-2-multiplexed-7-segment-display",
-    "title": "E155 Labs",
-    "section": "Lab 2: Multiplexed 7-Segment Display",
-    "text": "Lab 2: Multiplexed 7-Segment Display"
-  },
-  {
-    "objectID": "labs.html#lab-3-keypad-scanner",
-    "href": "labs.html#lab-3-keypad-scanner",
-    "title": "E155 Labs",
-    "section": "Lab 3: Keypad Scanner",
-    "text": "Lab 3: Keypad Scanner"
-  },
-  {
-    "objectID": "labs.html#lab-4-digital-audio",
-    "href": "labs.html#lab-4-digital-audio",
-    "title": "E155 Labs",
-    "section": "Lab 4: Digital Audio",
-    "text": "Lab 4: Digital Audio"
-  },
-  {
-    "objectID": "labs.html#lab-5-interrupts",
-    "href": "labs.html#lab-5-interrupts",
-    "title": "E155 Labs",
-    "section": "Lab 5: Interrupts",
-    "text": "Lab 5: Interrupts"
-  },
-  {
-    "objectID": "labs.html#lab-6-the-internet-of-things-and-serial-peripheral-interface",
-    "href": "labs.html#lab-6-the-internet-of-things-and-serial-peripheral-interface",
-    "title": "E155 Labs",
-    "section": "Lab 6: The Internet of Things and Serial Peripheral Interface",
-    "text": "Lab 6: The Internet of Things and Serial Peripheral Interface"
-  },
-  {
-    "objectID": "labs.html#lab-7-the-advanced-encryption-standard",
-    "href": "labs.html#lab-7-the-advanced-encryption-standard",
-    "title": "E155 Labs",
-    "section": "Lab 7: The Advanced Encryption Standard",
-    "text": "Lab 7: The Advanced Encryption Standard"
+    "text": "Lab 2 Report\n\n\nMultiplexed 7-Segment Display\n\n\n\n\n\nSep 9, 2025\n\n\nGeorge Davis\n\n\n\n\n\n\n\n\n\n\n\n\nLab 1 Report\n\n\nFPGA and MCU Setup and Testing\n\n\n\n\n\nSep 2, 2025\n\n\nGeorge Davis\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "resources.html",
