@@ -1,0 +1,15 @@
+---
+title: "Week 3 Reflections"
+description: "Grappling With Non-academic Commitments"
+author: "George Davis"
+date: "9/10/25"
+categories:
+  - reflection
+  - labreport
+draft: false
+---
+
+This week, the second micro-ps lab came and went, and with it was my cousin's wedding in Walla Walla, Washington. In order to keep up, I needed to code my lab asynchronously from the hum of campus life. I found it difficult to find time when I was home and at the wedding to focus on my work. Part of this was because I was excited to spend time with my brother and sister in law, who were visiting from Dunedin, New Zealand, but also because I am beginning to notice that I thrive off of others who are dedicated to working on the same difficult and intense lab work. I came out of the weekend with fully written Verilog modules and testbenches, but hadn't pushed anything to synthesis or a waveform generator/ simulator. Come Monday, I had to build my circuit and attempt to compile my code. Unfortunately, as a result, I ran out of time and wasn't able to get my testbenches working in time for my lab checkoff. Therefore, I had to settle for proficiency for this lab. I plan to resubmit for excellence, but need to focus on lab 3 at the moment, since, as I have heard, it is one of the most difficult labs. Thankfully, class lecture this week focused on test benches, and I imagine the testing scheme that I make will lab 3 will be very similar yet more complex when compared to lab 2. So I am hoping, once I get lab 3 complete to the Excellence specification, going back and finishing up lab two will be a breeze.
+
+
+Outside of my micro-ps coursework, I have picked up a new humanities elective focused on public speaking. I am not a very good public speaker, and I think this opportunity will be good for me to improve these skills. I think there is a lot of value in being able to verbally communicate topics in nearly every scenario I see myself going. Additionally, I know it's probably my biggest weakness at the moment. I think this will help me with job interviews, presentations, and my day-to-day conversations. I am nervous but excited. The nice thing about micro-ps is that there isn't much else that is more difficult than it, so comparatively, everything is easy!
