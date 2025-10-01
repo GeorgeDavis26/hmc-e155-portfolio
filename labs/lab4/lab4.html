@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="George Davis">
+<meta name="dcterms.date" content="2025-09-30">
+<meta name="description" content="Digital Audio">
+
+<title>Lab 4 Report – E155 Portfolio</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">E155 Portfolio</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../labs.html"> 
+<span class="menu-text">Labs</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#functional-demonstation-superstition-stevie-wonder" id="toc-functional-demonstation-superstition-stevie-wonder" class="nav-link" data-scroll-target="#functional-demonstation-superstition-stevie-wonder">Functional Demonstation: Superstition, Stevie Wonder!</a></li>
+  <li><a href="#technical-documentation" id="toc-technical-documentation" class="nav-link" data-scroll-target="#technical-documentation">Technical Documentation</a></li>
+  <li><a href="#schematic" id="toc-schematic" class="nav-link" data-scroll-target="#schematic">Schematic</a></li>
+  <li><a href="#calculations-to-show-induvidual-pitches-match-1-error" id="toc-calculations-to-show-induvidual-pitches-match-1-error" class="nav-link" data-scroll-target="#calculations-to-show-induvidual-pitches-match-1-error">Calculations to show Induvidual Pitches Match 1% Error</a></li>
+  <li><a href="#calculations-to-show-induvidual-tone-lengths-match-1-error" id="toc-calculations-to-show-induvidual-tone-lengths-match-1-error" class="nav-link" data-scroll-target="#calculations-to-show-induvidual-tone-lengths-match-1-error">Calculations to show Induvidual Tone Lengths Match 1% Error</a></li>
+  <li><a href="#calculations-to-show-min-and-max-tone-lengths-and-frequency-for-psc-selected" id="toc-calculations-to-show-min-and-max-tone-lengths-and-frequency-for-psc-selected" class="nav-link" data-scroll-target="#calculations-to-show-min-and-max-tone-lengths-and-frequency-for-psc-selected">Calculations to show Min and Max Tone Lengths and Frequency for PSC Selected</a></li>
+  <li><a href="#ai-prototype" id="toc-ai-prototype" class="nav-link" data-scroll-target="#ai-prototype">AI Prototype</a></li>
+  </ul>
+<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://github.com/GeorgeDavis26/lab4_gd/tree/main/mcu"><i class="bi bi-link-45deg"></i>Link to Github Repo with code</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lab 4 Report</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">reflection</div>
+    <div class="quarto-category">labreport</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Digital Audio
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>George Davis </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 30, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>Lab 4 focused on setting up drivers for the STM32L432KB to configure two timers to execute a simple song on an 8-ohm speaker. To do this, I created a simple audio amplifying circuit with an LM386 with a gain of 50, along with a series of custom and provided drivers and C functions. The code converted an array of pitches and durations to timer frequencies that divided down the configured system clock to toggle a GPIO pin. This lab was difficult because I had to make my own timer divers and initialize them to the correct modes. To do this, I had to decipher the hard-to-read data sheet and cross-reference multiple sections to enable the proper bits. This had an extremely steep learning curve, but I feel very confident with it now. My design meets the excellent requirements of the class.</p>
+<p>I spent 30 hours on this lab. Most of my time was spent on debugging my code while overlooking that I was reading out of the wrong pin on the oscilloscope and on my timer. This is because the pin names on the STM dev board do not match the pin names in software (i.e., A6 != PA6)</p>
+</section>
+<section id="functional-demonstation-superstition-stevie-wonder" class="level2">
+<h2 class="anchored" data-anchor-id="functional-demonstation-superstition-stevie-wonder">Functional Demonstation: Superstition, Stevie Wonder!</h2>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="superstition.mp4"></video></div>
+</section>
+<section id="technical-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="technical-documentation">Technical Documentation</h2>
+<p>The source code for this lab can be found in the associated Github repository found by following the link on the righthand side of the page.</p>
+</section>
+<section id="schematic" class="level2">
+<h2 class="anchored" data-anchor-id="schematic">Schematic</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab4_schem.jpeg" class="img-fluid figure-img" width="3000"></p>
+<figcaption>Figure 1: Schematic of physical circuit layout</figcaption>
+</figure>
+</div>
+<p>Figure 1 shows the physical layout of the circuit along with the pin names, numbers, and the component values.</p>
+</section>
+<section id="calculations-to-show-induvidual-pitches-match-1-error" class="level1">
+<h1>Calculations to show Induvidual Pitches Match 1% Error</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 21%">
+<col style="width: 7%">
+<col style="width: 20%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Note</th>
+<th>Frequency (Hz)</th>
+<th>ARR</th>
+<th>FREQ (ACTUAL)</th>
+<th>% ERROR</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A3</td>
+<td>220</td>
+<td>33056</td>
+<td>220.0056651</td>
+<td>0.002575066308</td>
+</tr>
+<tr class="even">
+<td>A3 sharp / B3 flat</td>
+<td>233.1</td>
+<td>31199</td>
+<td>233.1002331</td>
+<td>0.0001000001</td>
+</tr>
+<tr class="odd">
+<td>B3</td>
+<td>246.9</td>
+<td>29455</td>
+<td>246.9013876</td>
+<td>0.0005620031585</td>
+</tr>
+<tr class="even">
+<td>C4 (middle C)</td>
+<td>261.6</td>
+<td>27799</td>
+<td>261.6088947</td>
+<td>0.003400115604</td>
+</tr>
+<tr class="odd">
+<td>C4 sharp / D4 flat</td>
+<td>277.2</td>
+<td>26235</td>
+<td>277.2041193</td>
+<td>0.001486022082</td>
+</tr>
+<tr class="even">
+<td>D4</td>
+<td>293.7</td>
+<td>24761</td>
+<td>293.7051641</td>
+<td>0.001758280915</td>
+</tr>
+<tr class="odd">
+<td>D4 sharp / E4 flat</td>
+<td>311.1</td>
+<td>23376</td>
+<td>311.1060988</td>
+<td>0.001960413431</td>
+</tr>
+<tr class="even">
+<td>E4</td>
+<td>329.6</td>
+<td>22064</td>
+<td>329.6046804</td>
+<td>0.001420020164</td>
+</tr>
+<tr class="odd">
+<td>F4</td>
+<td>349.2</td>
+<td>20825</td>
+<td>349.2138324</td>
+<td>0.003961156901</td>
+</tr>
+<tr class="even">
+<td>F4 sharp / G4 flat</td>
+<td>370</td>
+<td>19655</td>
+<td>370.00037</td>
+<td>0.0001000001</td>
+</tr>
+<tr class="odd">
+<td>G4</td>
+<td>392</td>
+<td>18551</td>
+<td>392.0185033</td>
+<td>0.004720222795</td>
+</tr>
+<tr class="even">
+<td>G4 sharp / A4 flat</td>
+<td>415.3</td>
+<td>17510</td>
+<td>415.3233552</td>
+<td>0.005623691241</td>
+</tr>
+<tr class="odd">
+<td>A4</td>
+<td>440</td>
+<td>16527</td>
+<td>440.0246414</td>
+<td>0.005600313618</td>
+</tr>
+<tr class="even">
+<td>A4 sharp / B4 flat</td>
+<td>466.2</td>
+<td>15599</td>
+<td>466.2004662</td>
+<td>0.0001000001</td>
+</tr>
+<tr class="odd">
+<td>B4</td>
+<td>493.9</td>
+<td>14724</td>
+<td>493.9033802</td>
+<td>0.0006843796837</td>
+</tr>
+<tr class="even">
+<td>C5</td>
+<td>523.3</td>
+<td>13896</td>
+<td>523.3307385</td>
+<td>0.005873970015</td>
+</tr>
+<tr class="odd">
+<td>C5 sharp / D5 flat</td>
+<td>554.4</td>
+<td>13117</td>
+<td>554.4082385</td>
+<td>0.001486022082</td>
+</tr>
+<tr class="even">
+<td>D5</td>
+<td>587.3</td>
+<td>12382</td>
+<td>587.3154545</td>
+<td>0.002631444243</td>
+</tr>
+<tr class="odd">
+<td>D5 sharp / E5 flat</td>
+<td>622.2</td>
+<td>11687</td>
+<td>622.2388153</td>
+<td>0.006238389151</td>
+</tr>
+<tr class="even">
+<td>E5</td>
+<td>659.2</td>
+<td>11031</td>
+<td>659.2392379</td>
+<td>0.005952354284</td>
+</tr>
+<tr class="odd">
+<td>F5</td>
+<td>698.4</td>
+<td>10412</td>
+<td>698.4276647</td>
+<td>0.003961156901</td>
+</tr>
+<tr class="even">
+<td>F5 sharp / G5 flat</td>
+<td>740.9</td>
+<td>9815</td>
+<td>740.9053864</td>
+<td>0.0007270052853</td>
+</tr>
+<tr class="odd">
+<td>G5</td>
+<td>784</td>
+<td>9275</td>
+<td>784.0370065</td>
+<td>0.004720222795</td>
+</tr>
+<tr class="even">
+<td>G5 sharp / A5 flat</td>
+<td>830.6</td>
+<td>8754</td>
+<td>830.6941488</td>
+<td>0.01133503468</td>
+</tr>
+<tr class="odd">
+<td>A5</td>
+<td>880</td>
+<td>8263</td>
+<td>880.0492828</td>
+<td>0.005600313618</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="calculations-to-show-induvidual-tone-lengths-match-1-error" class="level1">
+<h1>Calculations to show Induvidual Tone Lengths Match 1% Error</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 16%">
+<col style="width: 12%">
+<col style="width: 6%">
+<col style="width: 17%">
+<col style="width: 16%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Note Type</th>
+<th>Duration [s]</th>
+<th>Frequency</th>
+<th>ARR</th>
+<th>FREQ (ACTUAL)</th>
+<th>DUR (ACTUAL)</th>
+<th>% ERROR</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Whole</td>
+<td>0.5</td>
+<td>2</td>
+<td>28550</td>
+<td>2.00000245</td>
+<td>0.4999993875</td>
+<td>0.0001225001501</td>
+</tr>
+<tr class="even">
+<td>Half</td>
+<td>0.25</td>
+<td>4</td>
+<td>14274</td>
+<td>4.000145005</td>
+<td>0.2499909375</td>
+<td>0.003625131411</td>
+</tr>
+<tr class="odd">
+<td>Quarter</td>
+<td>0.125</td>
+<td>8</td>
+<td>7136</td>
+<td>8.00085049</td>
+<td>0.1249867125</td>
+<td>0.01063113009</td>
+</tr>
+<tr class="even">
+<td>Eighth</td>
+<td>0.0625</td>
+<td>16</td>
+<td>3567</td>
+<td>16.00394337</td>
+<td>0.0624846</td>
+<td>0.02464607279</td>
+</tr>
+<tr class="odd">
+<td>Sixteenth</td>
+<td>0.03125</td>
+<td>32</td>
+<td>1783</td>
+<td>32.00788674</td>
+<td>0.0312423</td>
+<td>0.02464607279</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="calculations-to-show-min-and-max-tone-lengths-and-frequency-for-psc-selected" class="level1">
+<h1>Calculations to show Min and Max Tone Lengths and Frequency for PSC Selected</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/max_min.jpeg" class="img-fluid figure-img" width="3000"></p>
+<figcaption>Figure 2: Max Min Calculations</figcaption>
+</figure>
+</div>
+<p>Figure 2 shows the maximum and minimum values for the duration of a note and frequency of the tone. This is limited by the 16 bit auto reload register and the prescaler which is set for either application.</p>
+</section>
+<section id="ai-prototype" class="level1">
+<h1>AI Prototype</h1>
+<p>I gave ChatGPT the following prompt:</p>
+<p>What timers should I use on the STM32L432KC to generate frequencies ranging from 220Hz to 1kHz? What’s the best choice of timer if I want to easily connect it to a GPIO pin? What formulae are relevant, and what registers need to be set to configure them properly?</p>
+<p>It broke its response down into 5 parts that outlined the process of choosing and then configuring the timers to complete the function described. It started by outlining all of the available timers and their basic differences/ functions and then its recommendations. It recommended I use TIM 1, 2, 3, or 5. This is WRONG! Upon my own inspection of the reference manual, our STM does not support a TIM 4 or 5. There is still value in its opinion, but this hallucination is damning. The next two sections outline the calculations that need to be performed in order to properly set the prescaler (PSC), pulse width (RCC), and automatic reload (ARR) in order to get the desired counter frequency. I struggled with this part of the lab, and Chat’s explanation made sense and could potentially provide itself as a good resource for future, similar calculations and conceptual hurdles. The fourth section is the most helpful in my opinion, as it clears up the most difficult aspect of the lab, discerning what the reference manual wants from you when you are trying to configure a peripheral to a mode. Chat gave me lines of code that would show me how to set the right bits in each TIM register. However, Chat used masks without defining their bit shift value, so without drivers or header files, this code is useless! The final section was a short summary and a prompt to me to ask it for clarification.</p>
+<p>I would give this response an F grade due to its content being either incorrect or correct, but unusable for this purpose. First, recommending timers that don’t exist would lead any unsuspecting user down a trail of confusion. These processors are complex, and taking shortcuts with an LLM that is also fallible is not a great idea. Additionally, because the code it provided used undefined masks I would be unable to really use or learn from it without the reference manual. I think if my prompt were targeted, as opposed to asking it to solve multiple problems, I would get clearer information. For example, “what bits do I need to set in order to configure TIMx” could reduce the amount the LLM has to process and increase the detail of the response.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/GeorgeDavis26\.github\.io\/hmc-e155-portfolio\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<script>videojs(video_shortcode_videojs_video1);</script>
+
+
+
+
+</body></html>
