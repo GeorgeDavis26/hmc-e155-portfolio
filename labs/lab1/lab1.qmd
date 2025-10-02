@@ -117,6 +117,7 @@ logic and always_ff are used for modern, synthesizable SystemVerilog style.
 
 Would you like me to also show you a parameterized version where you can set the blink frequency (e.g. 1 Hz, 5 Hz, 10 Hz) just by changing a parameter, without manually recomputing counter values?
 
+##Reflection
 
 After creating a new Lattice Radiant project and sythesizing the file/ module that ChatGPT gave me the follow synthesis error was thrown.
 
