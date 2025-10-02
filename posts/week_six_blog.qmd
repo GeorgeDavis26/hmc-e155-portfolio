@@ -1,0 +1,16 @@
+---
+title: "Week 6 Reflections"
+description: "In the Thick of it"
+author: "George Davis"
+date: "10/1/25"
+categories:
+  - reflection
+  - labreport
+draft: false
+---
+
+This week the fourth micro-ps lab was due! It took a lot of effort because it was in a language I was less familiar with (C) and required reading the lengthy STM reference manual. I completed the lab and achieved the excellent spec which I was very happy with! 
+
+With these digital systems it can be very very demoralizing to debug because often the system will be completely broken with a simple misplaced bit. I find that with analog electrical systems often he circuit will at least work somewhat and you can use your intuition to decipher probable causes and get a starting point. I wasted so much time on this lab reading and rereading through my code when I was simply connected to the wrong physical pin on the dev board. However in my desperation to complete the lab I really reinforced my understanding of the system I deployed while I was searching for a bug in my code that didn't exist. 
+
+Outside of micro-ps my clinic project is continuing on, leading the team is proving to be a lot of work but still is coming out to be a rewarding experience! I am looking forward to making it through this semester and looking back on this tough work with pride. 

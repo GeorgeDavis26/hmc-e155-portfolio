@@ -20,6 +20,10 @@ Lab 2 focused on creating a multiplexed seven segment display by using the inter
 
 I spent 10 hours on this lab
 
+## Functional Demonstation
+
+(images/dual_seven_seg.jpeg){width=3000}
+
 
 ## Technical Documentation
 
