@@ -1,0 +1,27 @@
+---
+title: "Communication System"
+description: "E157: Radio Frequency Circuit Design"
+author: "George Davis"
+date: "12/10/24"
+categories:
+  - reflection
+  - labreport
+draft: false
+format:
+  html:
+    other-links:
+      - text: Linkedin
+        href: https://www.linkedin.com/in/gswdavis/
+---
+
+## Summary
+
+I developed an RF receiver to intercept and decode messages sent from a transmitter at 2.256 GHz. Please see the attached report to get an in-depth understanding of our receiver stages and calculations to support the results found. This was one of the most rewarding projects I have undertaken, as it was likely the best instance of me learning a completely foreign subject, such as radio communication, which is so deeply ingrained in my day-to-day life. The satisfaction of decoding the relatively simple message was brought to me by the culmination of a long and hard semester of work and theoretical understanding.
+
+## Technincal Report
+
+![Final Technical report by George Davis and lab partner Matthew Molinar](files/DP2_GD-1.pdf){width="100%" height="600px"}
+
+## Radiation Pattern Characterization
+
+![Measured Radiation Pattern of the TP-link antenna used](images/tp_link.jpeg){width="100%" height="600px"}

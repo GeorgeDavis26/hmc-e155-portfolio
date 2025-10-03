@@ -1,0 +1,39 @@
+---
+title: "5th Order Analog Butterworth Filter"
+description: "E157: Radio Frequency Circuit Design"
+author: "George Davis"
+date: "10/10/24"
+categories:
+  - reflection
+  - labreport
+draft: false
+format:
+  html:
+    other-links:
+      - text: Linkedin
+        href: https://www.linkedin.com/in/gswdavis/
+---
+
+## Summary
+
+	I created a custom Low-pass ladder filter to meet the following requirements:
+
+* Designed for a source impedance and load impedance of 50Ω
+* Pass band edge of 100MHz
+* Stop band start of 200MHz
+* 20dB of rejection in the stop band
+* Insertion loss of less than 3dB
+* In-band ripple of less than 1dB
+
+	It was required to design the filter by hand before using any simulation or online calculator to verify the s-parameter results. See the report attached to get a better understanding of the details of the design and results. 
+
+
+## Technincal Report
+
+![Final Technical report by George Davis and Lab Partner](files/Gdavis - DP1.pdf){width="100%" height="600px"}
+
+## The Filter Board Itself
+
+![Recorded Smith Chart for Impedance Characterization Under a Frequency Sweep](images/smith.jpeg){width="100%" height="600px"}
+
+![Filterboard with surface mount resistor and reactive components to meet spec](images/filter_board.jpeg){width="100%" height="600px"}

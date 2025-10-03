@@ -10,7 +10,9 @@ website:
       - href: blog.qmd
         text: Blog
       - href: labs.qmd
-        text: Labs
+        text: e155 Labs
+      - href: projects.qmd
+        text: Projects
       - href: resources.qmd
         text: Resources
 

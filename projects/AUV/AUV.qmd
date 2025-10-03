@@ -1,0 +1,34 @@
+---
+title: "Underwater Autonomous Robot"
+description: "E80: Experimental Engineering"
+author: "George Davis"
+date: "4/30/24"
+categories:
+  - reflection
+  - labreport
+draft: false
+format:
+  html:
+    other-links:
+      - text: Linkedin
+        href: https://www.linkedin.com/in/gswdavis/
+---
+
+## Summary
+
+Harvey Mudd’s primary group-based lab class teaches skills in communication and team dynamics through stressful and high-intensity scenarios, working through the development of our autonomous underwater robot. My role in the group focused primarily on the analog circuitry and control systems of our robot. I designed and implemented both the depth sensor and turbidity meter, and developed the Arduino code that controlled the motors using a digital proportional (P-control) feedback system based on the depth sensor readings. The following year, I joined the teaching team for this course, leading office hours outside of class time and providing support to the students during a dedicated lab shift. 
+
+![Project teammates. Starting from the left; Erin Wang, George Davis, Natalie Arce, and Joseph Abdemalek](images/E80team.jpeg){width=3000}
+
+
+## Technincal Report
+
+![Final Technical report by George Davis, Natalie Arce, Joseph Abdemalek, and Erin Wang](files/E80 Team 14 Final Report.pdf){width="100%" height="600px"}
+
+![Final Presentation by George Davis, Natalie Arce, Joseph Abdemalek, and Erin Wang](files/E80 Final Presentation Team 14.pdf){width="100%" height="600px"}
+
+## Action Shots!
+
+![Fully assembled and soldered set of envelope detectors to detect the tubidity of seawater. MCP601 op amps not pictured but their slots are.](images/protoboard.jpeg){width=3000}
+
+![The robot beign deployed off of the dock to gather data.](images/atwork.jpeg){width=3000}

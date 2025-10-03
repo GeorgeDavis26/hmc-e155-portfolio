@@ -1,0 +1,28 @@
+---
+title: "Digital Filter"
+description: "E101: Advanced Systems Engineers (Signals and Controls)"
+author: "George Davis"
+date: "12/10/24"
+categories:
+  - reflection
+  - labreport
+draft: false
+format:
+  html:
+    other-links:
+      - text: Linkedin
+        href: https://www.linkedin.com/in/gswdavis/
+---
+
+## Summary
+
+
+## Technincal Report
+
+![Final Technical report by George Davis, Matthew Molinar, Isaiah Jeter, and Emmett Stralka](files/E101 Final Report Project .pdf){width="100%" height="600px"}
+
+## Results and Setup
+
+![Time Domain Representation of the Analog and Digital Filters](images/time_domain.jpeg){width="100%" height="600px"}
+
+![Solderless Breadboard with the Arduino running the Digital Filter](images/digi_filter.jpeg){width="100%" height="400px"}
