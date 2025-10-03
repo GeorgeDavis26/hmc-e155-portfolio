@@ -15,5 +15,14 @@
       "/labs/lab2/lab2.html",
       "/labs/lab1/lab1.html"
     ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/Digital_Filter/digital_filter.html",
+      "/projects/Communication_System/communication_system.html",
+      "/projects/Analog_Butterworth_Filter/butterworth_filter.html",
+      "/projects/AUV/AUV.html"
+    ]
   }
 ]
