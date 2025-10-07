@@ -18,7 +18,7 @@
     "href": "labs.html",
     "title": "E155 Labs",
     "section": "",
-    "text": "Lab 4 Report\n\n\nDigital Audio\n\n\n\n\n\nSep 30, 2025\n\n\nGeorge Davis\n\n\n\n\n\n\n\n\n\n\n\n\nLab 2 Report\n\n\nMultiplexed 7-Segment Display\n\n\n\n\n\nSep 9, 2025\n\n\nGeorge Davis\n\n\n\n\n\n\n\n\n\n\n\n\nLab 1 Report\n\n\nFPGA and MCU Setup and Testing\n\n\n\n\n\nSep 2, 2025\n\n\nGeorge Davis\n\n\n\n\n\nNo matching items"
+    "text": "Lab 5 Report\n\n\nDigital Audio\n\n\n\n\n\nOct 7, 2025\n\n\nGeorge Davis\n\n\n\n\n\n\n\n\n\n\n\n\nLab 4 Report\n\n\nDigital Audio\n\n\n\n\n\nSep 30, 2025\n\n\nGeorge Davis\n\n\n\n\n\n\n\n\n\n\n\n\nLab 2 Report\n\n\nMultiplexed 7-Segment Display\n\n\n\n\n\nSep 9, 2025\n\n\nGeorge Davis\n\n\n\n\n\n\n\n\n\n\n\n\nLab 1 Report\n\n\nFPGA and MCU Setup and Testing\n\n\n\n\n\nSep 2, 2025\n\n\nGeorge Davis\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/AUV/AUV.html",
@@ -152,6 +152,69 @@
     "title": "Lab 1 Report",
     "section": "Questa Wave Forms",
     "text": "Questa Wave Forms\n\n\n\nFigure 3: top module\n\n\n\n\n\nFigure 4: led_control module\n\n\n\n\n\nFigure 5: seven_seg_disp module\n\n\nFigures 3, 4, and 5 show the induvidual automatic testbench files run on questa. Notice 0 errors for all test vectors."
+  },
+  {
+    "objectID": "labs/lab5/lab5.html",
+    "href": "labs/lab5/lab5.html",
+    "title": "Lab 5 Report",
+    "section": "",
+    "text": "This lab involved using the CMSIS drivers and the STM32L432KC to create an algorithm that can calculate the rev/s of a motor using a quadrature encoder. This lab utilized two sets of interrupt handlers and a simple timer peripheral to handle the measurement of the rotations. My design meets all requirements of the class specifications.\nI spent 8 hours on this lab"
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#summary",
+    "href": "labs/lab5/lab5.html#summary",
+    "title": "Lab 5 Report",
+    "section": "",
+    "text": "This lab involved using the CMSIS drivers and the STM32L432KC to create an algorithm that can calculate the rev/s of a motor using a quadrature encoder. This lab utilized two sets of interrupt handlers and a simple timer peripheral to handle the measurement of the rotations. My design meets all requirements of the class specifications.\nI spent 8 hours on this lab"
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#functional-demonstation",
+    "href": "labs/lab5/lab5.html#functional-demonstation",
+    "title": "Lab 5 Report",
+    "section": "Functional Demonstation",
+    "text": "Functional Demonstation\n\nMeasured angular velocity at ~12V is approximately 2.86 [rev/s]\nupdating at a rate of 4 Hz"
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#technical-documentation",
+    "href": "labs/lab5/lab5.html#technical-documentation",
+    "title": "Lab 5 Report",
+    "section": "Technical Documentation",
+    "text": "Technical Documentation\nThe source code for this lab can be found in the associated Github repository found by following the link on the righthand side of the page."
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#schematic",
+    "href": "labs/lab5/lab5.html#schematic",
+    "title": "Lab 5 Report",
+    "section": "Schematic",
+    "text": "Schematic\n\n\n\nFigure 1: Schematic of physical circuit layout\n\n\nFigure 1 shows the physical layout of the circuit along with the pin names, numbers, and the component values."
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#flowchart",
+    "href": "labs/lab5/lab5.html#flowchart",
+    "title": "Lab 5 Report",
+    "section": "Flowchart",
+    "text": "Flowchart\n\n\n\nFigure 2: Flowchart of the general main function process along with the two interrupt trees\n\n\nFigure 2 describes the process of the the main function and how it interfaces with the set of interrupts connected to the two GPIO input pins. The output is a simple print statement depending on the counter value."
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#calculations-to-support-measured-angular-velocity",
+    "href": "labs/lab5/lab5.html#calculations-to-support-measured-angular-velocity",
+    "title": "Lab 5 Report",
+    "section": "Calculations to Support Measured Angular Velocity",
+    "text": "Calculations to Support Measured Angular Velocity\n\n\n\nFigure 3: Set of slides to show period of motor at 12 V\n\n\n\\[\nw = 1 / (0.71-0.36) = 2.857 rad/s\n\\]\n\n\n\nFigure 4: Osciliscope trace of one pulse off of one of the quadrature encoder pins\n\n\nReading the calculated period off of the trace… T = 852 µs\n\\[\nPPR = 408 rev^{-1}\n\\]\n\\[\nw = 1 / (PPR * 852 * 10^{-6}) = 2.877 rev/s\n\\]\nThese two methods of calculating the angular velocity match the measured value from the code!"
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#comparing-the-performance-of-interrupts-and-polling-based-code",
+    "href": "labs/lab5/lab5.html#comparing-the-performance-of-interrupts-and-polling-based-code",
+    "title": "Lab 5 Report",
+    "section": "Comparing the Performance of Interrupts and Polling Based Code",
+    "text": "Comparing the Performance of Interrupts and Polling Based Code\nInterrupts, when triggered and configured in their proper handler will halt any processes in the core and perform their function. This is convenient for when you are either waiting for something to happen or need to designate a set amount of time before something happens and you want to complete other tasks while you are waiting. If our code was any longer than the period of the input signal itself the polling method would not be able to keep up. For example a printf statement, a rather slow operation, could cause the poll to miss an edge on a high frequency stimulus. But an interrupt based implementation would have the edge detection running in the background and be able to halt other processes to perform the function in near real time.\n\n\n\n\n\n\n\n\n\n\n\n\n\nInterrupt output pin (blue) Input Quadrature pin (yellow)\nPolling output pin (blue) Input Quadrature pin (yellow)\n\n\n\nWith no delay the output traces of either of the polling or interrupt approaches are very similar. There is little difference in the delay between the input signal and the output signal in either example\n\n\n\n\n\n\n\n\n\n\n\n\n\nInterrupt output pin (blue) Input Quadrature pin (yellow)\nPolling output pin (blue) Input Quadrature pin (yellow)\n\n\n\nWith a 20 ms delay representative of some slow coding process the polling method absolutely falls apart as the signal is alliased beyond recognition. The polling code needs to wait for the timer to be done to detect an edge while the interupt can break the sequence of events of whatever is happening and “steal” the memory stack pointer to output on the GPIO.\n\nIn this picture I measured the polling output (blue) and the interrupt output (yellow) both set to trigger at the edges of the same quadrature pin. There is a 34 µs delay between the two but this is not a fair comparison. The interrupt hogs the memory pointer when an edge is detected and doesn’t allow for the poll to detect the edge itself until it is done output to the GPIO. In order to prove that the interrupt was a better implementation I had to set up two independent tests like I did above. However, this concept is why the interrupts are better for quick stimuli."
+  },
+  {
+    "objectID": "labs/lab5/lab5.html#ai-prototype",
+    "href": "labs/lab5/lab5.html#ai-prototype",
+    "title": "Lab 5 Report",
+    "section": "AI Prototype",
+    "text": "AI Prototype\nIn response to the following prompt:\nWrite me interrupt handlers to interface with a quadrature encoder. I’m using the STM32L432KC, what pins should I connect the encoder to in order to allow it to easily trigger the interrupts?\nChatGPT walked me through MOST of the top down process of at least setting up my project, but still was missing many of the pieces of a fully functional segger project. It started by explaining the concept of a quadrature encoder and how the idea of an interrupt fits into its function. Then it moved to which pins to use; here was where my first warning flag went off. I wish it would have asked me clarifying questions so I could specify that we were using a 5V input and would need to take that into consideration to the pin selection. Next, it moved to the implementation of the actual interrupt handling. It gave me a HAL-based implementation (Hardware Abstraction Layer) in the following line:\n__HAL_RCC_GPIOA_CLK_ENABLE();\nWe have not covered this tool in class. Upon prompting Chat again about what it was, it explained that it was a macro that handled the initialization of the GPIOA pins. This is helpful, and maybe I could have inferred this from the words contained in the macro, but to an ignorant or inexperienced user, this is a black box that could introduce hard-to-handle code bugs.\nThe LLM then went and explained how to handle the encoder logic to determine the direction of the motor. I had a very similar approach to what ChatGPT recommended, but I don’t think I would have understood its implementation without working through it myself. The LLM also suggested I use a set of timers to decode the angular velocity. I was unaware of this functionality, but I think this is one of the positives of using the LLMS for something like this. It can pick out things from the reference manual (alternative functions) that I missed on initial scans of the document !"
   },
   {
     "objectID": "labs/lab4/lab4.html",
