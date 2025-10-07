@@ -179,28 +179,28 @@
     "href": "labs/lab5/lab5.html#technical-documentation",
     "title": "Lab 5 Report",
     "section": "Technical Documentation",
-    "text": "Technical Documentation\nThe source code for this lab can be found in the associated Github repository found by following the link on the righthand side of the page."
+    "text": "Technical Documentation\nThe source code for this lab can be found in the associated Github repository found by following the link on the righthand side of the page.\n\n\n\nFigure 1: Quadrature encoder decoding algorithm\n\n\nFigure 1 shows my approach to determening the speed and direction of the motor at evergy edge of each of the two sensors. There are 4 possible orientations in a truth table for 2 possible flags for a total of 8 circumstances to handle in the code."
   },
   {
     "objectID": "labs/lab5/lab5.html#schematic",
     "href": "labs/lab5/lab5.html#schematic",
     "title": "Lab 5 Report",
     "section": "Schematic",
-    "text": "Schematic\n\n\n\nFigure 1: Schematic of physical circuit layout\n\n\nFigure 1 shows the physical layout of the circuit along with the pin names, numbers, and the component values."
+    "text": "Schematic\n\n\n\nFigure 2: Schematic of physical circuit layout\n\n\nFigure 2 shows the physical layout of the circuit along with the pin names, numbers, and the component values."
   },
   {
     "objectID": "labs/lab5/lab5.html#flowchart",
     "href": "labs/lab5/lab5.html#flowchart",
     "title": "Lab 5 Report",
     "section": "Flowchart",
-    "text": "Flowchart\n\n\n\nFigure 2: Flowchart of the general main function process along with the two interrupt trees\n\n\nFigure 2 describes the process of the the main function and how it interfaces with the set of interrupts connected to the two GPIO input pins. The output is a simple print statement depending on the counter value."
+    "text": "Flowchart\n\n\n\nFigure 3: Flowchart of the general main function process along with the two interrupt trees\n\n\nFigure 3 describes the process of the the main function and how it interfaces with the set of interrupts connected to the two GPIO input pins. The output is a simple print statement depending on the counter value."
   },
   {
     "objectID": "labs/lab5/lab5.html#calculations-to-support-measured-angular-velocity",
     "href": "labs/lab5/lab5.html#calculations-to-support-measured-angular-velocity",
     "title": "Lab 5 Report",
     "section": "Calculations to Support Measured Angular Velocity",
-    "text": "Calculations to Support Measured Angular Velocity\n\n\n\nFigure 3: Set of slides to show period of motor at 12 V\n\n\n\\[\nw = 1 / (0.71-0.36) = 2.857 rad/s\n\\]\n\n\n\nFigure 4: Osciliscope trace of one pulse off of one of the quadrature encoder pins\n\n\nReading the calculated period off of the trace… T = 852 µs\n\\[\nPPR = 408 rev^{-1}\n\\]\n\\[\nw = 1 / (PPR * 852 * 10^{-6}) = 2.877 rev/s\n\\]\nThese two methods of calculating the angular velocity match the measured value from the code!"
+    "text": "Calculations to Support Measured Angular Velocity\n\n\n\nFigure 4: Set of slides to show period of motor at 12 V\n\n\n\\[\nw = 1 / (0.71-0.36) = 2.857 rad/s\n\\]\n\n\n\nFigure 5: Osciliscope trace of one pulse off of one of the quadrature encoder pins\n\n\nReading the calculated period off of the trace… T = 852 µs\n\\[\nPPR = 408 rev^{-1}\n\\]\n\\[\nw = 1 / (PPR * 852 * 10^{-6}) = 2.877 rev/s\n\\]\nThese two methods of calculating the angular velocity match the measured value from the code!"
   },
   {
     "objectID": "labs/lab5/lab5.html#comparing-the-performance-of-interrupts-and-polling-based-code",
