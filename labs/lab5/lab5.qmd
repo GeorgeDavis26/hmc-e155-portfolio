@@ -34,27 +34,34 @@ updating at a rate of 4 Hz
 
 The source code for this lab can be found in the associated Github repository found by following the link on the righthand side of the page.
 
+![Figure 1: Quadrature encoder decoding algorithm](images/lab5_alg.jpeg){width=3000}
+
+Figure 1 shows my approach to determening the speed and direction of the motor at evergy edge 
+of each of the two sensors. There are 4 possible orientations in a truth table for 2 possible flags for 
+a total of 8 circumstances to handle in the code.
+
+
 ## Schematic
 
-![Figure 1: Schematic of physical circuit layout](images/lab5_schem.jpeg){width=3000}
+![Figure 2: Schematic of physical circuit layout](images/lab5_schem.jpeg){width=3000}
 
-Figure 1 shows the physical layout of the circuit along with the pin names, numbers, and the component values.
+Figure 2 shows the physical layout of the circuit along with the pin names, numbers, and the component values.
 
 ## Flowchart
 
-![Figure 2: Flowchart of the general main function process along with the two interrupt trees](images/lab5_flowchart.jpeg){width=3000}
+![Figure 3: Flowchart of the general main function process along with the two interrupt trees](images/lab5_flowchart.jpeg){width=3000}
 
-Figure 2 describes the process of the the main function and how it interfaces with the set of interrupts connected to the two GPIO input pins. The output is a simple print statement depending on the counter value.
+Figure 3 describes the process of the the main function and how it interfaces with the set of interrupts connected to the two GPIO input pins. The output is a simple print statement depending on the counter value.
 
 ## Calculations to Support Measured Angular Velocity
 
-![Figure 3: Set of slides to show period of motor at 12 V](images/lab5_slides.jpeg){width=3000}
+![Figure 4: Set of slides to show period of motor at 12 V](images/lab5_slides.jpeg){width=3000}
 
 $$
 w = 1 / (0.71-0.36) = 2.857 rad/s
 $$
 
-![Figure 4: Osciliscope trace of one pulse off of one of the quadrature encoder pins](images/lab5_oscope.jpeg){width=3000}
+![Figure 5: Osciliscope trace of one pulse off of one of the quadrature encoder pins](images/lab5_oscope.jpeg){width=3000}
 
 Reading the calculated period off of the trace... T = 852 µs
 
