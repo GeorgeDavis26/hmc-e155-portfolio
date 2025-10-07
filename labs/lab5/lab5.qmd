@@ -11,7 +11,7 @@ format:
   html:
     other-links:
       - text: Link to Github Repo with code
-        href: https://github.com/GeorgeDavis26/lab4_gd/tree/main/mcu
+        href: https://github.com/GeorgeDavis26/lab5_gd
 ---
 
 ## Summary
