@@ -20,6 +20,7 @@
   {
     "listing": "/projects.html",
     "items": [
+      "/projects/Bode_Plot_Generator/bode_plot_generator.html",
       "/projects/Digital_Filter/digital_filter.html",
       "/projects/Communication_System/communication_system.html",
       "/projects/Analog_Butterworth_Filter/butterworth_filter.html",

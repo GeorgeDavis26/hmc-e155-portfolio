@@ -63,95 +63,67 @@
     "text": "Results and Setup\n\n\n\nTime Domain Representation of the Analog and Digital Filters\n\n\n\n\n\nSolderless Breadboard with the Arduino running the Digital Filter"
   },
   {
-    "objectID": "posts/week_six_blog.html",
-    "href": "posts/week_six_blog.html",
-    "title": "Week 6 Reflections",
+    "objectID": "posts/first-post.html",
+    "href": "posts/first-post.html",
+    "title": "Week 1 Reflections",
     "section": "",
-    "text": "This week the fourth micro-ps lab was due! It took a lot of effort because it was in a language I was less familiar with (C) and required reading the lengthy STM reference manual. I completed the lab and achieved the excellent spec which I was very happy with!\nWith these digital systems it can be very very demoralizing to debug because often the system will be completely broken with a simple misplaced bit. I find that with analog electrical systems often he circuit will at least work somewhat and you can use your intuition to decipher probable causes and get a starting point. I wasted so much time on this lab reading and rereading through my code when I was simply connected to the wrong physical pin on the dev board. However in my desperation to complete the lab I really reinforced my understanding of the system I deployed while I was searching for a bug in my code that didn’t exist.\nOutside of micro-ps my clinic project is continuing on, leading the team is proving to be a lot of work but still is coming out to be a rewarding experience! I am looking forward to making it through this semester and looking back on this tough work with pride."
+    "text": "This week I learend how to better use git for academic use and to set up a quarto portfolio website on guthub pages. Additionally, I will be working on lab 1 where we will be setting up and programming our FPcdGA and MCU to run a simple task."
   },
   {
-    "objectID": "posts/week_three_blog.html",
-    "href": "posts/week_three_blog.html",
-    "title": "Week 3 Reflections",
+    "objectID": "posts/first-post.html#summary",
+    "href": "posts/first-post.html#summary",
+    "title": "Week 1 Reflections",
     "section": "",
-    "text": "This week, the second micro-ps lab came and went, and with it was my cousin’s wedding in Walla Walla, Washington. In order to keep up, I needed to code my lab asynchronously from the hum of campus life. I found it difficult to find time when I was home and at the wedding to focus on my work. Part of this was because I was excited to spend time with my brother and sister in law, who were visiting from Dunedin, New Zealand, but also because I am beginning to notice that I thrive off of others who are dedicated to working on the same difficult and intense lab work. I came out of the weekend with fully written Verilog modules and testbenches, but hadn’t pushed anything to synthesis or a waveform generator/ simulator. Come Monday, I had to build my circuit and attempt to compile my code. Unfortunately, as a result, I ran out of time and wasn’t able to get my testbenches working in time for my lab checkoff. Therefore, I had to settle for proficiency for this lab. I plan to resubmit for excellence, but need to focus on lab 3 at the moment, since, as I have heard, it is one of the most difficult labs. Thankfully, class lecture this week focused on test benches, and I imagine the testing scheme that I make will lab 3 will be very similar yet more complex when compared to lab 2. So I am hoping, once I get lab 3 complete to the Excellence specification, going back and finishing up lab two will be a breeze.\nOutside of my micro-ps coursework, I have picked up a new humanities elective focused on public speaking. I am not a very good public speaker, and I think this opportunity will be good for me to improve these skills. I think there is a lot of value in being able to verbally communicate topics in nearly every scenario I see myself going. Additionally, I know it’s probably my biggest weakness at the moment. I think this will help me with job interviews, presentations, and my day-to-day conversations. I am nervous but excited. The nice thing about micro-ps is that there isn’t much else that is more difficult than it, so comparatively, everything is easy!"
+    "text": "This week I learend how to better use git for academic use and to set up a quarto portfolio website on guthub pages. Additionally, I will be working on lab 1 where we will be setting up and programming our FPcdGA and MCU to run a simple task."
   },
   {
-    "objectID": "labs/lab2/lab2.html",
-    "href": "labs/lab2/lab2.html",
-    "title": "Lab 2 Report",
+    "objectID": "posts/first-post.html#reflections-on-lab",
+    "href": "posts/first-post.html#reflections-on-lab",
+    "title": "Week 1 Reflections",
+    "section": "Reflections on Lab",
+    "text": "Reflections on Lab\nI have yet to complete lab one but have made significant progress… Learning git was slow at first but I am excited for the functionality it can provide my academic and everyday life!"
+  },
+  {
+    "objectID": "posts/week-two-post.html",
+    "href": "posts/week-two-post.html",
+    "title": "Week 2 Reflections",
     "section": "",
-    "text": "Lab 2 focused on creating a multiplexed seven segment display by using the internal high speed oscillator to create a low frequency enable which control a mux and demux module. My design meets the proficiency requirements but I am missing the testbenches for most of my modules.\nI spent 10 hours on this lab"
+    "text": "This week I completed my first micro-ps lab! This was very satisfying but difficult. I needed to brush off my surface-mount soldering and System Verilog skills quickly in order to meet the fast-approaching deadline. This was my first time using the Upduino FPGA board and the Lattice Radiant programmer to complete any task. There is always a learning curve with new software, but as I gain more experience in the computer engineering field, the curve steepens and my ability to learn quickly increases.\nLooking past micro-ps, this was the first week of my senior year! I have set a goal for myself to apply for at least one job per day to give myself the best possible chances of landing something I am both passionate about and in the location I want, the Bay Area. I would be very happy to work at a company that requires me to do some HDL programming or stress the skills learned in E155. This week, I am going back home to attend my cousin’s wedding in Walla Walla, Washington. I have installed the Fusion Virtual Machine to be able to use the Lattice Radiant and Questa software for the upcoming lab. This will be a challenge, but I am confident that I am up to the task!"
   },
   {
-    "objectID": "labs/lab2/lab2.html#summary",
-    "href": "labs/lab2/lab2.html#summary",
-    "title": "Lab 2 Report",
+    "objectID": "labs/lab4/lab4.html",
+    "href": "labs/lab4/lab4.html",
+    "title": "Lab 4 Report",
     "section": "",
-    "text": "Lab 2 focused on creating a multiplexed seven segment display by using the internal high speed oscillator to create a low frequency enable which control a mux and demux module. My design meets the proficiency requirements but I am missing the testbenches for most of my modules.\nI spent 10 hours on this lab"
+    "text": "Lab 4 focused on setting up drivers for the STM32L432KB to configure two timers to execute a simple song on an 8-ohm speaker. To do this, I created a simple audio amplifying circuit with an LM386 with a gain of 50, along with a series of custom and provided drivers and C functions. The code converted an array of pitches and durations to timer frequencies that divided down the configured system clock to toggle a GPIO pin. This lab was difficult because I had to make my own timer divers and initialize them to the correct modes. To do this, I had to decipher the hard-to-read data sheet and cross-reference multiple sections to enable the proper bits. This had an extremely steep learning curve, but I feel very confident with it now. My design meets the excellent requirements of the class.\nI spent 22 hours on this lab. Most of my time was spent on debugging my code while overlooking that I was reading out of the wrong pin on the oscilloscope and on my timer. This is because the pin names on the STM dev board do not match the pin names in software (i.e., A6 != PA6)"
   },
   {
-    "objectID": "labs/lab2/lab2.html#functional-demonstation",
-    "href": "labs/lab2/lab2.html#functional-demonstation",
-    "title": "Lab 2 Report",
-    "section": "Functional Demonstation",
-    "text": "Functional Demonstation\n(images/dual_seven_seg.jpeg){width=3000}"
+    "objectID": "labs/lab4/lab4.html#summary",
+    "href": "labs/lab4/lab4.html#summary",
+    "title": "Lab 4 Report",
+    "section": "",
+    "text": "Lab 4 focused on setting up drivers for the STM32L432KB to configure two timers to execute a simple song on an 8-ohm speaker. To do this, I created a simple audio amplifying circuit with an LM386 with a gain of 50, along with a series of custom and provided drivers and C functions. The code converted an array of pitches and durations to timer frequencies that divided down the configured system clock to toggle a GPIO pin. This lab was difficult because I had to make my own timer divers and initialize them to the correct modes. To do this, I had to decipher the hard-to-read data sheet and cross-reference multiple sections to enable the proper bits. This had an extremely steep learning curve, but I feel very confident with it now. My design meets the excellent requirements of the class.\nI spent 22 hours on this lab. Most of my time was spent on debugging my code while overlooking that I was reading out of the wrong pin on the oscilloscope and on my timer. This is because the pin names on the STM dev board do not match the pin names in software (i.e., A6 != PA6)"
   },
   {
-    "objectID": "labs/lab2/lab2.html#technical-documentation",
-    "href": "labs/lab2/lab2.html#technical-documentation",
-    "title": "Lab 2 Report",
+    "objectID": "labs/lab4/lab4.html#functional-demonstation-superstition-stevie-wonder",
+    "href": "labs/lab4/lab4.html#functional-demonstation-superstition-stevie-wonder",
+    "title": "Lab 4 Report",
+    "section": "Functional Demonstation: Superstition, Stevie Wonder!",
+    "text": "Functional Demonstation: Superstition, Stevie Wonder!"
+  },
+  {
+    "objectID": "labs/lab4/lab4.html#technical-documentation",
+    "href": "labs/lab4/lab4.html#technical-documentation",
+    "title": "Lab 4 Report",
     "section": "Technical Documentation",
     "text": "Technical Documentation\nThe source code for this lab can be found in the associated Github repository found by following the link on the righthand side of the page."
   },
   {
-    "objectID": "labs/lab2/lab2.html#block-diagram-and-schematic",
-    "href": "labs/lab2/lab2.html#block-diagram-and-schematic",
-    "title": "Lab 2 Report",
-    "section": "Block Diagram and Schematic",
-    "text": "Block Diagram and Schematic\n\n\n\nFigure 1: Block Diagram of System Verilog module desgin and heirarchy\n\n\nFigure 1 shows the System Verilog module design for this lab including the combiantional logic, sequential logic, and the HSOSC instantation to leverage the onboard oscilator\n\n\n\nFigure 2: Schematic of physical circuit layout along with blocks representing the combinational verilog code\n\n\nFigure 2 shows the physical layout of the circuit along with the pin names and numbers along with the component values and names as well. 100k ohm pull up resistors were used on the switching logic elements."
-  },
-  {
-    "objectID": "labs/lab2/lab2.html#reflection",
-    "href": "labs/lab2/lab2.html#reflection",
-    "title": "Lab 2 Report",
-    "section": "Reflection",
-    "text": "Reflection\nThe AI prototype was synthesized in the Lattice Radiant Software with minimal warnings. In general, I was impressed with ChatGPT’s code. I can’t be certain that the code works until I run a sim or verify the functionality on a working physical FPGA, but by inspection, it seems to function. However, with my relatively experienced knowledge base of System Verilog and FPGAs, the code used syntax and keywords that I was not used to. I think if I were to use this code to perform the function of my lab, I would not be able to debug as rapidly as I did with my own code. A HUGE benefit of writing your own code in digital design is being able to discern between a software and a hardware issue. If I didn’t write the code myself, I would likely waste a lot more time debugging. This is only true in my era of limited experience. I can imagine a hardware engineering pro with years of experience could understand and absorb the code the LLM gave very quickly to the point where they would understand it like their own. To some extent, it’s like a junior developer wrote code for you. Those skills exist in the world, but they are hard fought, and I am not there yet!\nA piece of syntax that ChatGPT used that I am unfamiliar with came in its instantiation of TICKS_PER_TOGGLE, where it defined a “localparam int unsigned”. I could make a guess at what this is, but really have no idea what it means to the level that is necessary to be able to interact with it once an issue inevitably comes up. What I have gathered from this class thus far is that NOTHING works on the first try, and problem-solving is almost necessary. If I can’t understand the code, it is useless.\nAfter I uploaded my own sv files, the code the LLM produced was much more understandable. If I enter the industry or ever have an ambitious personal project, I think this is the best method to make sure the LLM gives me something I can understand and not reference some decade-old old stackoverflow code from a senior engineer."
-  },
-  {
-    "objectID": "labs/lab1/lab1.html",
-    "href": "labs/lab1/lab1.html",
-    "title": "Lab 1 Report",
-    "section": "",
-    "text": "Lab 1 focused on setting up our MCU and FPGA board for the rest of the E155 class. Additionally, I wrote code to display the functionality of 3 SMT LEDs and a seven segment display using the breadboard adapter. My design met all requirements and I am excited to move on to the next lab! I ran into one issue where my 3.3V rail is at 2.7V not 3.3V on my FPGA, this needs to be addressed in the future but this lab still functions. I suspect a programming setting I missed…\nI spent 25 hours on this lab\nI would recommend addressing the ribbon cable shortage issue as soon as possible. I was noticing many unnecessary errrors arose from not having the propper wiring or broken jumpers between the ribbon cable female headers."
-  },
-  {
-    "objectID": "labs/lab1/lab1.html#summary",
-    "href": "labs/lab1/lab1.html#summary",
-    "title": "Lab 1 Report",
-    "section": "",
-    "text": "Lab 1 focused on setting up our MCU and FPGA board for the rest of the E155 class. Additionally, I wrote code to display the functionality of 3 SMT LEDs and a seven segment display using the breadboard adapter. My design met all requirements and I am excited to move on to the next lab! I ran into one issue where my 3.3V rail is at 2.7V not 3.3V on my FPGA, this needs to be addressed in the future but this lab still functions. I suspect a programming setting I missed…\nI spent 25 hours on this lab\nI would recommend addressing the ribbon cable shortage issue as soon as possible. I was noticing many unnecessary errrors arose from not having the propper wiring or broken jumpers between the ribbon cable female headers."
-  },
-  {
-    "objectID": "labs/lab1/lab1.html#technical-documentation",
-    "href": "labs/lab1/lab1.html#technical-documentation",
-    "title": "Lab 1 Report",
-    "section": "Technical Documentation",
-    "text": "Technical Documentation\nThe source code for this lab can be found in the associated Github repository found by following the link on the righthand side of the page."
-  },
-  {
-    "objectID": "labs/lab1/lab1.html#block-diagram-and-schematic",
-    "href": "labs/lab1/lab1.html#block-diagram-and-schematic",
-    "title": "Lab 1 Report",
-    "section": "Block Diagram and Schematic",
-    "text": "Block Diagram and Schematic\n\n\n\nFigure 1: Block Diagram of System Verilog module desgin and heirarchy\n\n\nFigure 1 shows the System Verilog module design for this lab including the combiantion logic and the HSOC instantation to leverage the onboard oscilator\n\n\n\nFigure 2: Schematic of physical circuit layout along with blocks representing the combinational verilog code\n\n\nFigure 2 shows the physical layout of the circuit along with the pin names and numbers along with the component values and names as well. 100k ohm pull up resistors were used on the switching logic elements."
-  },
-  {
-    "objectID": "labs/lab1/lab1.html#questa-wave-forms",
-    "href": "labs/lab1/lab1.html#questa-wave-forms",
-    "title": "Lab 1 Report",
-    "section": "Questa Wave Forms",
-    "text": "Questa Wave Forms\n\n\n\nFigure 3: top module\n\n\n\n\n\nFigure 4: led_control module\n\n\n\n\n\nFigure 5: seven_seg_disp module\n\n\nFigures 3, 4, and 5 show the induvidual automatic testbench files run on questa. Notice 0 errors for all test vectors."
+    "objectID": "labs/lab4/lab4.html#schematic",
+    "href": "labs/lab4/lab4.html#schematic",
+    "title": "Lab 4 Report",
+    "section": "Schematic",
+    "text": "Schematic\n\n\n\nFigure 1: Schematic of physical circuit layout\n\n\nFigure 1 shows the physical layout of the circuit along with the pin names, numbers, and the component values."
   },
   {
     "objectID": "labs/lab5/lab5.html",
@@ -217,67 +189,151 @@
     "text": "AI Prototype\nIn response to the following prompt:\nWrite me interrupt handlers to interface with a quadrature encoder. I’m using the STM32L432KC, what pins should I connect the encoder to in order to allow it to easily trigger the interrupts?\nChatGPT walked me through MOST of the top down process of at least setting up my project, but still was missing many of the pieces of a fully functional segger project. It started by explaining the concept of a quadrature encoder and how the idea of an interrupt fits into its function. Then it moved to which pins to use; here was where my first warning flag went off. I wish it would have asked me clarifying questions so I could specify that we were using a 5V input and would need to take that into consideration to the pin selection. Next, it moved to the implementation of the actual interrupt handling. It gave me a HAL-based implementation (Hardware Abstraction Layer) in the following line:\n__HAL_RCC_GPIOA_CLK_ENABLE();\nWe have not covered this tool in class. Upon prompting Chat again about what it was, it explained that it was a macro that handled the initialization of the GPIOA pins. This is helpful, and maybe I could have inferred this from the words contained in the macro, but to an ignorant or inexperienced user, this is a black box that could introduce hard-to-handle code bugs.\nThe LLM then went and explained how to handle the encoder logic to determine the direction of the motor. I had a very similar approach to what ChatGPT recommended, but I don’t think I would have understood its implementation without working through it myself. The LLM also suggested I use a set of timers to decode the angular velocity. I was unaware of this functionality, but I think this is one of the positives of using the LLMS for something like this. It can pick out things from the reference manual (alternative functions) that I missed on initial scans of the document !"
   },
   {
-    "objectID": "labs/lab4/lab4.html",
-    "href": "labs/lab4/lab4.html",
-    "title": "Lab 4 Report",
+    "objectID": "labs/lab1/lab1.html",
+    "href": "labs/lab1/lab1.html",
+    "title": "Lab 1 Report",
     "section": "",
-    "text": "Lab 4 focused on setting up drivers for the STM32L432KB to configure two timers to execute a simple song on an 8-ohm speaker. To do this, I created a simple audio amplifying circuit with an LM386 with a gain of 50, along with a series of custom and provided drivers and C functions. The code converted an array of pitches and durations to timer frequencies that divided down the configured system clock to toggle a GPIO pin. This lab was difficult because I had to make my own timer divers and initialize them to the correct modes. To do this, I had to decipher the hard-to-read data sheet and cross-reference multiple sections to enable the proper bits. This had an extremely steep learning curve, but I feel very confident with it now. My design meets the excellent requirements of the class.\nI spent 22 hours on this lab. Most of my time was spent on debugging my code while overlooking that I was reading out of the wrong pin on the oscilloscope and on my timer. This is because the pin names on the STM dev board do not match the pin names in software (i.e., A6 != PA6)"
+    "text": "Lab 1 focused on setting up our MCU and FPGA board for the rest of the E155 class. Additionally, I wrote code to display the functionality of 3 SMT LEDs and a seven segment display using the breadboard adapter. My design met all requirements and I am excited to move on to the next lab! I ran into one issue where my 3.3V rail is at 2.7V not 3.3V on my FPGA, this needs to be addressed in the future but this lab still functions. I suspect a programming setting I missed…\nI spent 25 hours on this lab\nI would recommend addressing the ribbon cable shortage issue as soon as possible. I was noticing many unnecessary errrors arose from not having the propper wiring or broken jumpers between the ribbon cable female headers."
   },
   {
-    "objectID": "labs/lab4/lab4.html#summary",
-    "href": "labs/lab4/lab4.html#summary",
-    "title": "Lab 4 Report",
+    "objectID": "labs/lab1/lab1.html#summary",
+    "href": "labs/lab1/lab1.html#summary",
+    "title": "Lab 1 Report",
     "section": "",
-    "text": "Lab 4 focused on setting up drivers for the STM32L432KB to configure two timers to execute a simple song on an 8-ohm speaker. To do this, I created a simple audio amplifying circuit with an LM386 with a gain of 50, along with a series of custom and provided drivers and C functions. The code converted an array of pitches and durations to timer frequencies that divided down the configured system clock to toggle a GPIO pin. This lab was difficult because I had to make my own timer divers and initialize them to the correct modes. To do this, I had to decipher the hard-to-read data sheet and cross-reference multiple sections to enable the proper bits. This had an extremely steep learning curve, but I feel very confident with it now. My design meets the excellent requirements of the class.\nI spent 22 hours on this lab. Most of my time was spent on debugging my code while overlooking that I was reading out of the wrong pin on the oscilloscope and on my timer. This is because the pin names on the STM dev board do not match the pin names in software (i.e., A6 != PA6)"
+    "text": "Lab 1 focused on setting up our MCU and FPGA board for the rest of the E155 class. Additionally, I wrote code to display the functionality of 3 SMT LEDs and a seven segment display using the breadboard adapter. My design met all requirements and I am excited to move on to the next lab! I ran into one issue where my 3.3V rail is at 2.7V not 3.3V on my FPGA, this needs to be addressed in the future but this lab still functions. I suspect a programming setting I missed…\nI spent 25 hours on this lab\nI would recommend addressing the ribbon cable shortage issue as soon as possible. I was noticing many unnecessary errrors arose from not having the propper wiring or broken jumpers between the ribbon cable female headers."
   },
   {
-    "objectID": "labs/lab4/lab4.html#functional-demonstation-superstition-stevie-wonder",
-    "href": "labs/lab4/lab4.html#functional-demonstation-superstition-stevie-wonder",
-    "title": "Lab 4 Report",
-    "section": "Functional Demonstation: Superstition, Stevie Wonder!",
-    "text": "Functional Demonstation: Superstition, Stevie Wonder!"
-  },
-  {
-    "objectID": "labs/lab4/lab4.html#technical-documentation",
-    "href": "labs/lab4/lab4.html#technical-documentation",
-    "title": "Lab 4 Report",
+    "objectID": "labs/lab1/lab1.html#technical-documentation",
+    "href": "labs/lab1/lab1.html#technical-documentation",
+    "title": "Lab 1 Report",
     "section": "Technical Documentation",
     "text": "Technical Documentation\nThe source code for this lab can be found in the associated Github repository found by following the link on the righthand side of the page."
   },
   {
-    "objectID": "labs/lab4/lab4.html#schematic",
-    "href": "labs/lab4/lab4.html#schematic",
-    "title": "Lab 4 Report",
-    "section": "Schematic",
-    "text": "Schematic\n\n\n\nFigure 1: Schematic of physical circuit layout\n\n\nFigure 1 shows the physical layout of the circuit along with the pin names, numbers, and the component values."
+    "objectID": "labs/lab1/lab1.html#block-diagram-and-schematic",
+    "href": "labs/lab1/lab1.html#block-diagram-and-schematic",
+    "title": "Lab 1 Report",
+    "section": "Block Diagram and Schematic",
+    "text": "Block Diagram and Schematic\n\n\n\nFigure 1: Block Diagram of System Verilog module desgin and heirarchy\n\n\nFigure 1 shows the System Verilog module design for this lab including the combiantion logic and the HSOC instantation to leverage the onboard oscilator\n\n\n\nFigure 2: Schematic of physical circuit layout along with blocks representing the combinational verilog code\n\n\nFigure 2 shows the physical layout of the circuit along with the pin names and numbers along with the component values and names as well. 100k ohm pull up resistors were used on the switching logic elements."
   },
   {
-    "objectID": "posts/week-two-post.html",
-    "href": "posts/week-two-post.html",
-    "title": "Week 2 Reflections",
+    "objectID": "labs/lab1/lab1.html#questa-wave-forms",
+    "href": "labs/lab1/lab1.html#questa-wave-forms",
+    "title": "Lab 1 Report",
+    "section": "Questa Wave Forms",
+    "text": "Questa Wave Forms\n\n\n\nFigure 3: top module\n\n\n\n\n\nFigure 4: led_control module\n\n\n\n\n\nFigure 5: seven_seg_disp module\n\n\nFigures 3, 4, and 5 show the induvidual automatic testbench files run on questa. Notice 0 errors for all test vectors."
+  },
+  {
+    "objectID": "labs/lab2/lab2.html",
+    "href": "labs/lab2/lab2.html",
+    "title": "Lab 2 Report",
     "section": "",
-    "text": "This week I completed my first micro-ps lab! This was very satisfying but difficult. I needed to brush off my surface-mount soldering and System Verilog skills quickly in order to meet the fast-approaching deadline. This was my first time using the Upduino FPGA board and the Lattice Radiant programmer to complete any task. There is always a learning curve with new software, but as I gain more experience in the computer engineering field, the curve steepens and my ability to learn quickly increases.\nLooking past micro-ps, this was the first week of my senior year! I have set a goal for myself to apply for at least one job per day to give myself the best possible chances of landing something I am both passionate about and in the location I want, the Bay Area. I would be very happy to work at a company that requires me to do some HDL programming or stress the skills learned in E155. This week, I am going back home to attend my cousin’s wedding in Walla Walla, Washington. I have installed the Fusion Virtual Machine to be able to use the Lattice Radiant and Questa software for the upcoming lab. This will be a challenge, but I am confident that I am up to the task!"
+    "text": "Lab 2 focused on creating a multiplexed seven segment display by using the internal high speed oscillator to create a low frequency enable which control a mux and demux module. My design meets the proficiency requirements but I am missing the testbenches for most of my modules.\nI spent 10 hours on this lab"
   },
   {
-    "objectID": "posts/first-post.html",
-    "href": "posts/first-post.html",
-    "title": "Week 1 Reflections",
+    "objectID": "labs/lab2/lab2.html#summary",
+    "href": "labs/lab2/lab2.html#summary",
+    "title": "Lab 2 Report",
     "section": "",
-    "text": "This week I learend how to better use git for academic use and to set up a quarto portfolio website on guthub pages. Additionally, I will be working on lab 1 where we will be setting up and programming our FPcdGA and MCU to run a simple task."
+    "text": "Lab 2 focused on creating a multiplexed seven segment display by using the internal high speed oscillator to create a low frequency enable which control a mux and demux module. My design meets the proficiency requirements but I am missing the testbenches for most of my modules.\nI spent 10 hours on this lab"
   },
   {
-    "objectID": "posts/first-post.html#summary",
-    "href": "posts/first-post.html#summary",
-    "title": "Week 1 Reflections",
+    "objectID": "labs/lab2/lab2.html#functional-demonstation",
+    "href": "labs/lab2/lab2.html#functional-demonstation",
+    "title": "Lab 2 Report",
+    "section": "Functional Demonstation",
+    "text": "Functional Demonstation\n(images/dual_seven_seg.jpeg){width=3000}"
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#technical-documentation",
+    "href": "labs/lab2/lab2.html#technical-documentation",
+    "title": "Lab 2 Report",
+    "section": "Technical Documentation",
+    "text": "Technical Documentation\nThe source code for this lab can be found in the associated Github repository found by following the link on the righthand side of the page."
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#block-diagram-and-schematic",
+    "href": "labs/lab2/lab2.html#block-diagram-and-schematic",
+    "title": "Lab 2 Report",
+    "section": "Block Diagram and Schematic",
+    "text": "Block Diagram and Schematic\n\n\n\nFigure 1: Block Diagram of System Verilog module desgin and heirarchy\n\n\nFigure 1 shows the System Verilog module design for this lab including the combiantional logic, sequential logic, and the HSOSC instantation to leverage the onboard oscilator\n\n\n\nFigure 2: Schematic of physical circuit layout along with blocks representing the combinational verilog code\n\n\nFigure 2 shows the physical layout of the circuit along with the pin names and numbers along with the component values and names as well. 100k ohm pull up resistors were used on the switching logic elements."
+  },
+  {
+    "objectID": "labs/lab2/lab2.html#reflection",
+    "href": "labs/lab2/lab2.html#reflection",
+    "title": "Lab 2 Report",
+    "section": "Reflection",
+    "text": "Reflection\nThe AI prototype was synthesized in the Lattice Radiant Software with minimal warnings. In general, I was impressed with ChatGPT’s code. I can’t be certain that the code works until I run a sim or verify the functionality on a working physical FPGA, but by inspection, it seems to function. However, with my relatively experienced knowledge base of System Verilog and FPGAs, the code used syntax and keywords that I was not used to. I think if I were to use this code to perform the function of my lab, I would not be able to debug as rapidly as I did with my own code. A HUGE benefit of writing your own code in digital design is being able to discern between a software and a hardware issue. If I didn’t write the code myself, I would likely waste a lot more time debugging. This is only true in my era of limited experience. I can imagine a hardware engineering pro with years of experience could understand and absorb the code the LLM gave very quickly to the point where they would understand it like their own. To some extent, it’s like a junior developer wrote code for you. Those skills exist in the world, but they are hard fought, and I am not there yet!\nA piece of syntax that ChatGPT used that I am unfamiliar with came in its instantiation of TICKS_PER_TOGGLE, where it defined a “localparam int unsigned”. I could make a guess at what this is, but really have no idea what it means to the level that is necessary to be able to interact with it once an issue inevitably comes up. What I have gathered from this class thus far is that NOTHING works on the first try, and problem-solving is almost necessary. If I can’t understand the code, it is useless.\nAfter I uploaded my own sv files, the code the LLM produced was much more understandable. If I enter the industry or ever have an ambitious personal project, I think this is the best method to make sure the LLM gives me something I can understand and not reference some decade-old old stackoverflow code from a senior engineer."
+  },
+  {
+    "objectID": "posts/week_three_blog.html",
+    "href": "posts/week_three_blog.html",
+    "title": "Week 3 Reflections",
     "section": "",
-    "text": "This week I learend how to better use git for academic use and to set up a quarto portfolio website on guthub pages. Additionally, I will be working on lab 1 where we will be setting up and programming our FPcdGA and MCU to run a simple task."
+    "text": "This week, the second micro-ps lab came and went, and with it was my cousin’s wedding in Walla Walla, Washington. In order to keep up, I needed to code my lab asynchronously from the hum of campus life. I found it difficult to find time when I was home and at the wedding to focus on my work. Part of this was because I was excited to spend time with my brother and sister in law, who were visiting from Dunedin, New Zealand, but also because I am beginning to notice that I thrive off of others who are dedicated to working on the same difficult and intense lab work. I came out of the weekend with fully written Verilog modules and testbenches, but hadn’t pushed anything to synthesis or a waveform generator/ simulator. Come Monday, I had to build my circuit and attempt to compile my code. Unfortunately, as a result, I ran out of time and wasn’t able to get my testbenches working in time for my lab checkoff. Therefore, I had to settle for proficiency for this lab. I plan to resubmit for excellence, but need to focus on lab 3 at the moment, since, as I have heard, it is one of the most difficult labs. Thankfully, class lecture this week focused on test benches, and I imagine the testing scheme that I make will lab 3 will be very similar yet more complex when compared to lab 2. So I am hoping, once I get lab 3 complete to the Excellence specification, going back and finishing up lab two will be a breeze.\nOutside of my micro-ps coursework, I have picked up a new humanities elective focused on public speaking. I am not a very good public speaker, and I think this opportunity will be good for me to improve these skills. I think there is a lot of value in being able to verbally communicate topics in nearly every scenario I see myself going. Additionally, I know it’s probably my biggest weakness at the moment. I think this will help me with job interviews, presentations, and my day-to-day conversations. I am nervous but excited. The nice thing about micro-ps is that there isn’t much else that is more difficult than it, so comparatively, everything is easy!"
   },
   {
-    "objectID": "posts/first-post.html#reflections-on-lab",
-    "href": "posts/first-post.html#reflections-on-lab",
-    "title": "Week 1 Reflections",
-    "section": "Reflections on Lab",
-    "text": "Reflections on Lab\nI have yet to complete lab one but have made significant progress… Learning git was slow at first but I am excited for the functionality it can provide my academic and everyday life!"
+    "objectID": "posts/week_six_blog.html",
+    "href": "posts/week_six_blog.html",
+    "title": "Week 6 Reflections",
+    "section": "",
+    "text": "This week the fourth micro-ps lab was due! It took a lot of effort because it was in a language I was less familiar with (C) and required reading the lengthy STM reference manual. I completed the lab and achieved the excellent spec which I was very happy with!\nWith these digital systems it can be very very demoralizing to debug because often the system will be completely broken with a simple misplaced bit. I find that with analog electrical systems often he circuit will at least work somewhat and you can use your intuition to decipher probable causes and get a starting point. I wasted so much time on this lab reading and rereading through my code when I was simply connected to the wrong physical pin on the dev board. However in my desperation to complete the lab I really reinforced my understanding of the system I deployed while I was searching for a bug in my code that didn’t exist.\nOutside of micro-ps my clinic project is continuing on, leading the team is proving to be a lot of work but still is coming out to be a rewarding experience! I am looking forward to making it through this semester and looking back on this tough work with pride."
+  },
+  {
+    "objectID": "projects/Bode_Plot_Generator/bode_plot_generator.html",
+    "href": "projects/Bode_Plot_Generator/bode_plot_generator.html",
+    "title": "Bode Plot Generator",
+    "section": "",
+    "text": "This project will implement an interactive Bode plot generator, which will be capable of displaying the amplitude and phase response of a device under test (DUT) across a swept frequency range. This will be implemented using an FPGA to generate sine waves via an internal DDS, and an MCU to receive and process the signal. Then, the data is sent from the MCU to an ESP8266, which will host a webpage for plotting the Bode plot.\nThe riskiest element of this project that we will need to take the most care in designing is the system we have designed to synthesize the sine wave. This process implements a complex external IC that will be interfaced with by our HDL code, requiring a strong intuition of signals that we are excited to refine!\nThe project tasks will be divided evenly among each of the project members. There shouldn’t be any aspect of the project that one of the members didn’t contribute to. That being said, based on the block diagram and project timeline, the initial programming will be split evenly between each team member, at which point we will come together and help each other debug and bring the different modules together.\nThis project will enable real-time visualization of how filters and other circuits behave in the frequency domain."
+  },
+  {
+    "objectID": "projects/Bode_Plot_Generator/bode_plot_generator.html#project-description-and-overview",
+    "href": "projects/Bode_Plot_Generator/bode_plot_generator.html#project-description-and-overview",
+    "title": "Bode Plot Generator",
+    "section": "",
+    "text": "This project will implement an interactive Bode plot generator, which will be capable of displaying the amplitude and phase response of a device under test (DUT) across a swept frequency range. This will be implemented using an FPGA to generate sine waves via an internal DDS, and an MCU to receive and process the signal. Then, the data is sent from the MCU to an ESP8266, which will host a webpage for plotting the Bode plot.\nThe riskiest element of this project that we will need to take the most care in designing is the system we have designed to synthesize the sine wave. This process implements a complex external IC that will be interfaced with by our HDL code, requiring a strong intuition of signals that we are excited to refine!\nThe project tasks will be divided evenly among each of the project members. There shouldn’t be any aspect of the project that one of the members didn’t contribute to. That being said, based on the block diagram and project timeline, the initial programming will be split evenly between each team member, at which point we will come together and help each other debug and bring the different modules together.\nThis project will enable real-time visualization of how filters and other circuits behave in the frequency domain."
+  },
+  {
+    "objectID": "projects/Bode_Plot_Generator/bode_plot_generator.html#embedded-design",
+    "href": "projects/Bode_Plot_Generator/bode_plot_generator.html#embedded-design",
+    "title": "Bode Plot Generator",
+    "section": "Embedded Design",
+    "text": "Embedded Design\n\nField Programmable Gate Array Design Details\nThe iCE40 FPGA will generate a signal using an internally implemented Direct Digital Synthesizer (DDS). The DDS will generate a set of bits at a rate of 40MHz that represents a sine wave to be converted from a digital signal to an analog signal using an external DAC.\n\n\nField Programmable Gate Array Design Details\nThe STM32L432KC will be responsible for receiving and sampling the analog signal using the onboard 12-bit ADC. Then, the MCU will calculate the magnitude and phase response signal coming from the DUT by comparing the input waveform with a reference signal directly from the DDS. Finally, the MCU will communicate the processed data to an ESP8266 via USART to generate Bode plots on a webpage.\nTiming synchronization between the MCU and the FPGA will be handled through a shared reference clock."
+  },
+  {
+    "objectID": "projects/Bode_Plot_Generator/bode_plot_generator.html#system-performance-calculations",
+    "href": "projects/Bode_Plot_Generator/bode_plot_generator.html#system-performance-calculations",
+    "title": "Bode Plot Generator",
+    "section": "System Performance Calculations",
+    "text": "System Performance Calculations\n\nMax frequency supported\nThe DAC sample rate is 40 MHz and 10 bits of resolution. According to the Nyquist theorem, our sample rate should be twice the maximum frequency. Thus, the maximum frequency supported for our input signal is 20 MHz.\n\\[\nf_{s} &gt; 2_{fmax}\n\\]\nHowever, we will likely oversample our signal to achieve our desired fidelity, therefore limiting our maximum frequency to 2.5 MHz.\n\n\nSmallest signal magnitude supported\nThe ADC on the MCU has a 12-bit configurable resolution and will be driven by 3.3 V (see section 16.2 in the Reference Manual). Thus, according to the following equation, the ADC can distinguish between voltages that differ by about 0.805 mV.\n\\[\nV_{LSB} = V_{FS}/2^N\n\\]\nHowever, the effective number of bits for the ADC is ~10.5 (see Table 65 in the Datasheet). Therefore, VLSB will be closer to 2.28 mV. Adding some factor of safety (choosing 5) to make sure that the signal is reliably above the noise floor, the smallest signal magnitude supported is 11.4 mV.\n\n\nMCU update rate\nThe ADC sample rate is 5.33 MSPS. According to the Nyquist theorem, our sample rate should be twice the maximum frequency. Thus, the maximum frequency supported for our input signal is about 2.5 MHz."
+  },
+  {
+    "objectID": "projects/Bode_Plot_Generator/bode_plot_generator.html#block-diagram",
+    "href": "projects/Bode_Plot_Generator/bode_plot_generator.html#block-diagram",
+    "title": "Bode Plot Generator",
+    "section": "Block Diagram",
+    "text": "Block Diagram\n\n\n\nBlock Diagram of the FPGA, DAC, DUT, MCU, and ESP"
+  },
+  {
+    "objectID": "projects/Bode_Plot_Generator/bode_plot_generator.html#schedule",
+    "href": "projects/Bode_Plot_Generator/bode_plot_generator.html#schedule",
+    "title": "Bode Plot Generator",
+    "section": "Schedule",
+    "text": "Schedule\nWeek 1: Set up communication between the FPGA and the external DAC and verify the DAC output waveform on the oscilloscope.\nWeek 2: Implement the DDS on the FPGA and generate multiple sine waves that automatically sweep a range of frequencies.\nWeek 3: Configure the ADC on the MCU. Begin capturing the amplitude and phase data across different frequencies.\nWeek 4: Set up communication with the ESP8266. Implement a basic web-based plotting interface and verify the full operation from end to end.\nWeek 5: Refine signal processing to account for possible impairments such as phase misalignments. Prepare for Demo Day with demonstrations of live Bode plot updates."
+  },
+  {
+    "objectID": "projects/Bode_Plot_Generator/bode_plot_generator.html#bom",
+    "href": "projects/Bode_Plot_Generator/bode_plot_generator.html#bom",
+    "title": "Bode Plot Generator",
+    "section": "BOM",
+    "text": "BOM\n\n\n\nItem\nQty\nPrice (With Shipping)\nLink\nDescription\n\n\n\n\nMAX5184BEEG+\n1\n$16.97\ndigikey.com\nDAC fit for AWG and DDS application\n\n\nSOIC-24 / SOP-24 SMD to DIP Adapter\n3\n$7.76\nschmalztech.com\nSMT breakout board for MAX8184 (min order of 3)\n\n\nLow Pass Filter (10MHz)\n1\nSTOCKROOM\nn/a\nFilter out sampling images.\n\n\nBreadboard/ Connectors\n1\nSTOCKROOM\nn/a\nHosts the DUT\n\n\niCE40 Lattice Pro FPGA\n1\nSTOCKROOM\nn/a\nUsed in E155 labs\n\n\nSTM32L432KC\n1\nSTOCKROOM\nn/a\nUsed in E155 labs\n\n\nESP8266\n1\nSTOCKROOM\nn/a\nUsed in E155 labs"
+  },
+  {
+    "objectID": "projects/Bode_Plot_Generator/bode_plot_generator.html#project-specifications",
+    "href": "projects/Bode_Plot_Generator/bode_plot_generator.html#project-specifications",
+    "title": "Bode Plot Generator",
+    "section": "Project Specifications",
+    "text": "Project Specifications\n\nDDS was successfully implemented on an FPGA\nThe DAC outputs a frequency sweep\nADC peripheral on the MCU is used to read amplitude data\nMCU can read data coming from the DUT and the DDS\nMCU can compare the DUT output and input sine waves, calculate the phase, and gain\nWorking webpage with a plotting interface that displays Bode plots\nWebpage updates Bode plots when a new DUT is in place\nThe system can handle single-digit megahertz signals"
   },
   {
     "objectID": "projects/Communication_System/communication_system.html",
@@ -340,7 +396,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Digital Filter\n\n\nE101: Advanced Systems Engineers (Signals and Controls)\n\n\n\n\n\nDec 10, 2024\n\n\nGeorge Davis\n\n\n\n\n\n\n\n\n\n\n\n\nCommunication System\n\n\nE157: Radio Frequency Circuit Design\n\n\n\n\n\nDec 10, 2024\n\n\nGeorge Davis\n\n\n\n\n\n\n\n\n\n\n\n\n5th Order Analog Butterworth Filter\n\n\nE157: Radio Frequency Circuit Design\n\n\n\n\n\nOct 10, 2024\n\n\nGeorge Davis\n\n\n\n\n\n\n\n\n\n\n\n\nUnderwater Autonomous Robot\n\n\nE80: Experimental Engineering\n\n\n\n\n\nApr 30, 2024\n\n\nGeorge Davis\n\n\n\n\n\nNo matching items"
+    "text": "Bode Plot Generator\n\n\nProject Proposal - E155 Microprocessor System Design & Applications\n\n\n\n\n\nOct 16, 2025\n\n\nGeorge Davis and Matthew Molinar\n\n\n\n\n\n\n\n\n\n\n\n\nDigital Filter\n\n\nE101: Advanced Systems Engineers (Signals and Controls)\n\n\n\n\n\nDec 10, 2024\n\n\nGeorge Davis\n\n\n\n\n\n\n\n\n\n\n\n\nCommunication System\n\n\nE157: Radio Frequency Circuit Design\n\n\n\n\n\nDec 10, 2024\n\n\nGeorge Davis\n\n\n\n\n\n\n\n\n\n\n\n\n5th Order Analog Butterworth Filter\n\n\nE157: Radio Frequency Circuit Design\n\n\n\n\n\nOct 10, 2024\n\n\nGeorge Davis\n\n\n\n\n\n\n\n\n\n\n\n\nUnderwater Autonomous Robot\n\n\nE80: Experimental Engineering\n\n\n\n\n\nApr 30, 2024\n\n\nGeorge Davis\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "resources.html",
