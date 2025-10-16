@@ -35,6 +35,16 @@ Timing synchronization between the MCU and the FPGA will be handled through a sh
 
 ## System Performance Calculations
 
+### DAC Voltage Resolution
+
+The MAX5184 DAC we chose has 10 bits of resolution and a 3.3V power rail as seen on the [datasheet](https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX5184BEEG/1779540). Therefor the equation for the smallest increment of voltage in a given sample rate is below
+
+$$
+V_{LSB} = V_{FS}/2^N
+$$
+
+For a Fullscale voltage of 3.3V and N bits of 10. The voltage represenative of the least significant bit is 3.22 mV.
+
 ### Max frequency supported
 
 The DAC sample rate is 40 MHz and 10 bits of resolution. According to the Nyquist theorem, our sample rate should be twice the maximum frequency. Thus, the maximum frequency supported for our input signal is 20 MHz. 
@@ -65,6 +75,11 @@ The ADC sample rate is 5.33 MSPS. According to the Nyquist theorem, our sample r
 
 ## Schedule
 
+![Block Diagram of the FPGA, DAC, DUT, MCU, and ESP](images/gantt.jpeg){width=3000}
+
+
+Week 1 is the week after Lab 7 is submitted (Week of 11/3)
+
 __Week 1__: Set up communication between the FPGA and the external DAC and verify the DAC output waveform on the oscilloscope.
 
 __Week 2__: Implement the DDS on the FPGA and generate multiple sine waves that automatically sweep a range of frequencies.
@@ -89,8 +104,8 @@ __Week 5__: Refine signal processing to account for possible impairments such as
 
 ## Project Specifications
 
-- [ ] DDS was successfully implemented on an FPGA
-- [ ] The DAC outputs a frequency sweep
+- [ ] FPGA outputs 10 bits that drives the DAC
+- [ ] The DAC outputs a frequency sweep between kilohertz and single digit megahertz
 - [ ] ADC peripheral on the MCU is used to read amplitude data
 - [ ] MCU can read data coming from the DUT and the DDS 
 - [ ] MCU can compare the DUT output and input sine waves, calculate the phase, and gain
