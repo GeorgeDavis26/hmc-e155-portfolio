@@ -165,6 +165,7 @@ window.Quarto = {
   </ul></li>
   <li><a href="#system-performance-calculations" id="toc-system-performance-calculations" class="nav-link" data-scroll-target="#system-performance-calculations">System Performance Calculations</a>
   <ul class="collapse">
+  <li><a href="#dac-voltage-resolution" id="toc-dac-voltage-resolution" class="nav-link" data-scroll-target="#dac-voltage-resolution">DAC Voltage Resolution</a></li>
   <li><a href="#max-frequency-supported" id="toc-max-frequency-supported" class="nav-link" data-scroll-target="#max-frequency-supported">Max frequency supported</a></li>
   <li><a href="#smallest-signal-magnitude-supported" id="toc-smallest-signal-magnitude-supported" class="nav-link" data-scroll-target="#smallest-signal-magnitude-supported">Smallest signal magnitude supported</a></li>
   <li><a href="#mcu-update-rate" id="toc-mcu-update-rate" class="nav-link" data-scroll-target="#mcu-update-rate">MCU update rate</a></li>
@@ -240,6 +241,14 @@ window.Quarto = {
 </section>
 <section id="system-performance-calculations" class="level2">
 <h2 class="anchored" data-anchor-id="system-performance-calculations">System Performance Calculations</h2>
+<section id="dac-voltage-resolution" class="level3">
+<h3 class="anchored" data-anchor-id="dac-voltage-resolution">DAC Voltage Resolution</h3>
+<p>The MAX5184 DAC we chose has 10 bits of resolution and a 3.3V power rail as seen on the <a href="https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX5184BEEG/1779540">datasheet</a>. Therefor the equation for the smallest increment of voltage in a given sample rate is below</p>
+<p><span class="math display">\[
+V_{LSB} = V_{FS}/2^N
+\]</span></p>
+<p>For a Fullscale voltage of 3.3V and N bits of 10. The voltage represenative of the least significant bit is 3.22 mV.</p>
+</section>
 <section id="max-frequency-supported" class="level3">
 <h3 class="anchored" data-anchor-id="max-frequency-supported">Max frequency supported</h3>
 <p>The DAC sample rate is 40 MHz and 10 bits of resolution. According to the Nyquist theorem, our sample rate should be twice the maximum frequency. Thus, the maximum frequency supported for our input signal is 20 MHz.</p>
@@ -272,6 +281,13 @@ V_{LSB} = V_{FS}/2^N
 </section>
 <section id="schedule" class="level2">
 <h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/gantt.jpeg" class="img-fluid figure-img" width="3000"></p>
+<figcaption>Block Diagram of the FPGA, DAC, DUT, MCU, and ESP</figcaption>
+</figure>
+</div>
+<p>Week 1 is the week after Lab 7 is submitted (Week of 11/3)</p>
 <p><strong>Week 1</strong>: Set up communication between the FPGA and the external DAC and verify the DAC output waveform on the oscilloscope.</p>
 <p><strong>Week 2</strong>: Implement the DDS on the FPGA and generate multiple sine waves that automatically sweep a range of frequencies.</p>
 <p><strong>Week 3</strong>: Configure the ADC on the MCU. Begin capturing the amplitude and phase data across different frequencies.</p>
@@ -346,8 +362,8 @@ V_{LSB} = V_{FS}/2^N
 <section id="project-specifications" class="level2">
 <h2 class="anchored" data-anchor-id="project-specifications">Project Specifications</h2>
 <ul class="task-list">
-<li><label><input type="checkbox">DDS was successfully implemented on an FPGA</label></li>
-<li><label><input type="checkbox">The DAC outputs a frequency sweep</label></li>
+<li><label><input type="checkbox">FPGA outputs 10 bits that drives the DAC</label></li>
+<li><label><input type="checkbox">The DAC outputs a frequency sweep between kilohertz and single digit megahertz</label></li>
 <li><label><input type="checkbox">ADC peripheral on the MCU is used to read amplitude data</label></li>
 <li><label><input type="checkbox">MCU can read data coming from the DUT and the DDS</label></li>
 <li><label><input type="checkbox">MCU can compare the DUT output and input sine waves, calculate the phase, and gain</label></li>
