@@ -161,7 +161,7 @@ window.Quarto = {
   <li><a href="#embedded-design" id="toc-embedded-design" class="nav-link" data-scroll-target="#embedded-design">Embedded Design</a>
   <ul class="collapse">
   <li><a href="#field-programmable-gate-array-design-details" id="toc-field-programmable-gate-array-design-details" class="nav-link" data-scroll-target="#field-programmable-gate-array-design-details">Field Programmable Gate Array Design Details</a></li>
-  <li><a href="#field-programmable-gate-array-design-details-1" id="toc-field-programmable-gate-array-design-details-1" class="nav-link" data-scroll-target="#field-programmable-gate-array-design-details-1">Field Programmable Gate Array Design Details</a></li>
+  <li><a href="#microcontroller-unit" id="toc-microcontroller-unit" class="nav-link" data-scroll-target="#microcontroller-unit">Microcontroller Unit</a></li>
   </ul></li>
   <li><a href="#system-performance-calculations" id="toc-system-performance-calculations" class="nav-link" data-scroll-target="#system-performance-calculations">System Performance Calculations</a>
   <ul class="collapse">
@@ -229,14 +229,15 @@ window.Quarto = {
 </section>
 <section id="embedded-design" class="level2">
 <h2 class="anchored" data-anchor-id="embedded-design">Embedded Design</h2>
+<p>The FPGA and MCU will run a calibration protocol to quantify the analog network’s contribution to attenuation and phase delay.</p>
 <section id="field-programmable-gate-array-design-details" class="level3">
 <h3 class="anchored" data-anchor-id="field-programmable-gate-array-design-details">Field Programmable Gate Array Design Details</h3>
-<p>The iCE40 FPGA will generate a signal using an internally implemented Direct Digital Synthesizer (DDS). The DDS will generate a set of bits at a rate of 40MHz that represents a sine wave to be converted from a digital signal to an analog signal using an external DAC.</p>
+<p>The iCE40 FPGA will generate a signal using an internally implemented Direct Digital Synthesizer (DDS). Storing the sine table in non volatile FLASHROM FPGA functionality. The DDS will generate a set of bits at a rate of 40MHz that represents a sine wave to be converted from a digital signal to an analog signal using an external DAC.</p>
 </section>
-<section id="field-programmable-gate-array-design-details-1" class="level3">
-<h3 class="anchored" data-anchor-id="field-programmable-gate-array-design-details-1">Field Programmable Gate Array Design Details</h3>
+<section id="microcontroller-unit" class="level3">
+<h3 class="anchored" data-anchor-id="microcontroller-unit">Microcontroller Unit</h3>
 <p>The STM32L432KC will be responsible for receiving and sampling the analog signal using the onboard 12-bit ADC. Then, the MCU will calculate the magnitude and phase response signal coming from the DUT by comparing the input waveform with a reference signal directly from the DDS. Finally, the MCU will communicate the processed data to an ESP8266 via USART to generate Bode plots on a webpage.</p>
-<p>Timing synchronization between the MCU and the FPGA will be handled through a shared reference clock.</p>
+<p>Timing synchronization between the MCU and the FPGA will be handled through a shared sync pin on each embedded system. This will also allow us to be able to estimate the phase delay at the receive chain. The sync pin will raise a flag at every zero crossing to indicate time zero for phase extraction.</p>
 </section>
 </section>
 <section id="system-performance-calculations" class="level2">
@@ -369,7 +370,7 @@ V_{LSB} = V_{FS}/2^N
 <li><label><input type="checkbox">MCU can compare the DUT output and input sine waves, calculate the phase, and gain</label></li>
 <li><label><input type="checkbox">Working webpage with a plotting interface that displays Bode plots</label></li>
 <li><label><input type="checkbox">Webpage updates Bode plots when a new DUT is in place</label></li>
-<li><label><input type="checkbox">The system can handle single-digit megahertz signals</label></li>
+<li><label><input type="checkbox">The system can handle AT LEAST 0.5 megahertz signals</label></li>
 </ul>
 
 
