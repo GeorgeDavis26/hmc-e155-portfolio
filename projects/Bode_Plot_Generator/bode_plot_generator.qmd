@@ -112,4 +112,4 @@ __Week 5__: Refine signal processing to account for possible impairments such as
 - [ ] MCU can compare the DUT output and input sine waves, calculate the phase, and gain
 - [ ] Working webpage with a plotting interface that displays Bode plots
 - [ ] Webpage updates Bode plots when a new DUT is in place
-- [ ] The system can handle AT LEAST 0.5 megahertz signals
+- [ ] The system can handle AT LEAST 0.1 megahertz signals
