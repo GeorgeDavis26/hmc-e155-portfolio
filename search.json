@@ -333,7 +333,7 @@
     "href": "projects/Bode_Plot_Generator/bode_plot_generator.html#project-specifications",
     "title": "Bode Plot Generator",
     "section": "Project Specifications",
-    "text": "Project Specifications\n\nFPGA outputs 10 bits that drives the DAC\nThe DAC outputs a frequency sweep between kilohertz and single digit megahertz\nADC peripheral on the MCU is used to read amplitude data\nMCU can read data coming from the DUT and the DDS\nMCU can compare the DUT output and input sine waves, calculate the phase, and gain\nWorking webpage with a plotting interface that displays Bode plots\nWebpage updates Bode plots when a new DUT is in place\nThe system can handle AT LEAST 0.5 megahertz signals"
+    "text": "Project Specifications\n\nFPGA outputs 10 bits that drives the DAC\nThe DAC outputs a frequency sweep between kilohertz and single digit megahertz\nADC peripheral on the MCU is used to read amplitude data\nMCU can read data coming from the DUT and the DDS\nMCU can compare the DUT output and input sine waves, calculate the phase, and gain\nWorking webpage with a plotting interface that displays Bode plots\nWebpage updates Bode plots when a new DUT is in place\nThe system can handle AT LEAST 0.1 megahertz signals"
   },
   {
     "objectID": "projects/Communication_System/communication_system.html",
