@@ -228,14 +228,14 @@
     "href": "labs/lab6/lab6.html",
     "title": "Lab 6 Report",
     "section": "",
-    "text": "This lab focused on writing and implementing a SPI drivers to interface with a temperature sensor module (DS1772) digital IC. The information extracted and decoded from the temperature sensors serial connection was then transmitted via UART to a ESP8266 wifi module which hosted a simple HTML page at the wifi port http://192.168.4.1/. My design meets all specifications by allowing the user to specify the bit resolution, turn the LED on and OFF and read the temperature in degrees C in real time all via the website. I spent 22 hours on this lab primarily on debugging my harware/"
+    "text": "This lab focused on writing and implementing a SPI drivers to interface with a temperature sensor module (DS1772) digital IC. The information extracted and decoded from the temperature sensors serial connection was then transmitted via UART to a ESP8266 wifi module which hosted a simple HTML page at the wifi port http://192.168.4.1/. My design meets all specifications by allowing the user to specify the bit resolution, turn the LED on and OFF and read the temperature in degrees C in real time all via the website. I spent 22 hours on this lab primarily on debugging my harware."
   },
   {
     "objectID": "labs/lab6/lab6.html#summary",
     "href": "labs/lab6/lab6.html#summary",
     "title": "Lab 6 Report",
     "section": "",
-    "text": "This lab focused on writing and implementing a SPI drivers to interface with a temperature sensor module (DS1772) digital IC. The information extracted and decoded from the temperature sensors serial connection was then transmitted via UART to a ESP8266 wifi module which hosted a simple HTML page at the wifi port http://192.168.4.1/. My design meets all specifications by allowing the user to specify the bit resolution, turn the LED on and OFF and read the temperature in degrees C in real time all via the website. I spent 22 hours on this lab primarily on debugging my harware/"
+    "text": "This lab focused on writing and implementing a SPI drivers to interface with a temperature sensor module (DS1772) digital IC. The information extracted and decoded from the temperature sensors serial connection was then transmitted via UART to a ESP8266 wifi module which hosted a simple HTML page at the wifi port http://192.168.4.1/. My design meets all specifications by allowing the user to specify the bit resolution, turn the LED on and OFF and read the temperature in degrees C in real time all via the website. I spent 22 hours on this lab primarily on debugging my harware."
   },
   {
     "objectID": "labs/lab6/lab6.html#simple-html-website",
