@@ -1,0 +1,15 @@
+---
+title: "Visual Displays of Information"
+description: "Edward R. Tufte's The Visual Display of Quantitative Information"
+author: "George Davis"
+date: "10/10/25"
+categories:
+  - reflection
+  - labreport
+draft: false
+---
+This week in SOSC 150 - Public Speaking, we focused on presenting information visually through slideshow presentations and graphics. The general concepts learned were based on Edward R. Tufte’s The Visual Display of Quantitative Information and its main points of graphic design philosophy. These points boiled down to the idea of conserving your ink for strictly important data and information and doing your best to avoid any flavorful designs in the margins of your slides and graphics. The three in-class activities were all related together and prioritized us students improving our visual communication skills. First, we identified three outstanding charts, graphics, or diagrams in our respective fields to be brought to class and analyzed. Second, we worked with a partner to generate three graphs of our own using data from the United Nations census and what we had learned in the class prior. Finally, we brought an improved slide from one of the presentations that we had given at some point earlier in our academic careers.
+
+In my opinion, decisions relating to what to include and not include on a slide are much more ambiguous than a plot. However, it is important to keep in mind that a bad instance of either can be detrimental to your argument or proposal. I learned that first and foremost, graphic presentations should always be as simple as possible while still being able to convey the information properly. This is of course, has its boundaries; a bare plot with few axis labels, and just a point of data would be taking this too far. One needs to take deep care into whether or not the various communication tools that clutter a plot are strictly necessary, but not be afraid to use them. A good example of this would be grid lines and ticks. In the incorrect application, these would be wasted, but they can be beneficial. These decisions are nuanced, and it can be helpful to generate multiple iterations of the same plot to make sure you get to the best final product possible.
+
+Finally, I would like to briefly mention the first talk that I attended for credit this semester. It was titled “Dangerous Questions” and was held by 6 HMC HSA faculty members, who all presented short independent talks on the current administration and the authoritarian times they lived in. Some of the speakers chose to use slides, and others didn’t. I found Prof. Dadabhoy’s and Prof. Mayeri’s talks both very different but equally impactful. Dadabhoy recited a rehearsed speech that she made engaging by interviewing it with a well-known concept, Shakespeare. Mayeri used visual art to make her argument. Both were different and impactful! 
