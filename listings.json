@@ -2,7 +2,12 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/personal_story.html",
+      "/posts/visual_info.html",
+      "/posts/debate_reflections.html",
       "/posts/week_six_blog.html",
+      "/posts/values_talk_reflection.html",
+      "/posts/values_talk.html",
       "/posts/week_three_blog.html",
       "/posts/week-two-post.html",
       "/posts/first-post.html"
