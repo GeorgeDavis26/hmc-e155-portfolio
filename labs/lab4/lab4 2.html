@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="George Davis">
+<meta name="dcterms.date" content="2025-09-30">
+<meta name="description" content="Digital Audio">
 
-<title>E155 Labs – E155 Portfolio</title>
+<title>Lab 4 Report – E155 Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,67 +72,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -139,7 +84,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">E155 Portfolio</span>
     </a>
   </div>
@@ -150,23 +95,23 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./labs.html" aria-current="page"> 
+    <a class="nav-link" href="../../labs.html"> 
 <span class="menu-text">e155 Labs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link" href="../../resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
 </ul>
@@ -180,22 +125,56 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#functional-demonstation-superstition-stevie-wonder" id="toc-functional-demonstation-superstition-stevie-wonder" class="nav-link" data-scroll-target="#functional-demonstation-superstition-stevie-wonder">Functional Demonstation: Superstition, Stevie Wonder!</a></li>
+  <li><a href="#technical-documentation" id="toc-technical-documentation" class="nav-link" data-scroll-target="#technical-documentation">Technical Documentation</a></li>
+  <li><a href="#schematic" id="toc-schematic" class="nav-link" data-scroll-target="#schematic">Schematic</a></li>
+  <li><a href="#calculations-to-show-induvidual-pitches-match-1-error" id="toc-calculations-to-show-induvidual-pitches-match-1-error" class="nav-link" data-scroll-target="#calculations-to-show-induvidual-pitches-match-1-error">Calculations to show Induvidual Pitches Match 1% Error</a></li>
+  <li><a href="#calculations-to-show-induvidual-tone-lengths-match-1-error" id="toc-calculations-to-show-induvidual-tone-lengths-match-1-error" class="nav-link" data-scroll-target="#calculations-to-show-induvidual-tone-lengths-match-1-error">Calculations to show Induvidual Tone Lengths Match 1% Error</a></li>
+  <li><a href="#calculations-to-show-min-and-max-tone-lengths-and-frequency-for-psc-selected" id="toc-calculations-to-show-min-and-max-tone-lengths-and-frequency-for-psc-selected" class="nav-link" data-scroll-target="#calculations-to-show-min-and-max-tone-lengths-and-frequency-for-psc-selected">Calculations to show Min and Max Tone Lengths and Frequency for PSC Selected</a></li>
+  <li><a href="#ai-prototype" id="toc-ai-prototype" class="nav-link" data-scroll-target="#ai-prototype">AI Prototype</a></li>
+  </ul>
+<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://github.com/GeorgeDavis26/lab4_gd/tree/main/mcu"><i class="bi bi-link-45deg"></i>Link to Github Repo with code</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">E155 Labs</h1>
-</div>
+<h1 class="title">Lab 4 Report</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">reflection</div>
+    <div class="quarto-category">labreport</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Digital Audio
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>George Davis </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 30, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -205,165 +184,320 @@ window.Quarto = {
 </header>
 
 
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>Lab 4 focused on setting up drivers for the STM32L432KB to configure two timers to execute a simple song on an 8-ohm speaker. To do this, I created a simple audio amplifying circuit with an LM386 with a gain of 50, along with a series of custom and provided drivers and C functions. The code converted an array of pitches and durations to timer frequencies that divided down the configured system clock to toggle a GPIO pin. This lab was difficult because I had to make my own timer divers and initialize them to the correct modes. To do this, I had to decipher the hard-to-read data sheet and cross-reference multiple sections to enable the proper bits. This had an extremely steep learning curve, but I feel very confident with it now. My design meets the excellent requirements of the class.</p>
+<p>I spent 22 hours on this lab. Most of my time was spent on debugging my code while overlooking that I was reading out of the wrong pin on the oscilloscope and on my timer. This is because the pin names on the STM dev board do not match the pin names in software (i.e., A6 != PA6)</p>
+</section>
+<section id="functional-demonstation-superstition-stevie-wonder" class="level2">
+<h2 class="anchored" data-anchor-id="functional-demonstation-superstition-stevie-wonder">Functional Demonstation: Superstition, Stevie Wonder!</h2>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="superstition.mp4"></video></div>
+</section>
+<section id="technical-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="technical-documentation">Technical Documentation</h2>
+<p>The source code for this lab can be found in the associated Github repository found by following the link on the righthand side of the page.</p>
+</section>
+<section id="schematic" class="level2">
+<h2 class="anchored" data-anchor-id="schematic">Schematic</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab4_schem.jpeg" class="img-fluid figure-img" width="3000"></p>
+<figcaption>Figure 1: Schematic of physical circuit layout</figcaption>
+</figure>
+</div>
+<p>Figure 1 shows the physical layout of the circuit along with the pin names, numbers, and the component values.</p>
+</section>
+<section id="calculations-to-show-induvidual-pitches-match-1-error" class="level1">
+<h1>Calculations to show Induvidual Pitches Match 1% Error</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 21%">
+<col style="width: 7%">
+<col style="width: 20%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Note</th>
+<th>Frequency (Hz)</th>
+<th>ARR</th>
+<th>FREQ (ACTUAL)</th>
+<th>% ERROR</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A3</td>
+<td>220</td>
+<td>33056</td>
+<td>220.0056651</td>
+<td>0.002575066308</td>
+</tr>
+<tr class="even">
+<td>A3 sharp / B3 flat</td>
+<td>233.1</td>
+<td>31199</td>
+<td>233.1002331</td>
+<td>0.0001000001</td>
+</tr>
+<tr class="odd">
+<td>B3</td>
+<td>246.9</td>
+<td>29455</td>
+<td>246.9013876</td>
+<td>0.0005620031585</td>
+</tr>
+<tr class="even">
+<td>C4 (middle C)</td>
+<td>261.6</td>
+<td>27799</td>
+<td>261.6088947</td>
+<td>0.003400115604</td>
+</tr>
+<tr class="odd">
+<td>C4 sharp / D4 flat</td>
+<td>277.2</td>
+<td>26235</td>
+<td>277.2041193</td>
+<td>0.001486022082</td>
+</tr>
+<tr class="even">
+<td>D4</td>
+<td>293.7</td>
+<td>24761</td>
+<td>293.7051641</td>
+<td>0.001758280915</td>
+</tr>
+<tr class="odd">
+<td>D4 sharp / E4 flat</td>
+<td>311.1</td>
+<td>23376</td>
+<td>311.1060988</td>
+<td>0.001960413431</td>
+</tr>
+<tr class="even">
+<td>E4</td>
+<td>329.6</td>
+<td>22064</td>
+<td>329.6046804</td>
+<td>0.001420020164</td>
+</tr>
+<tr class="odd">
+<td>F4</td>
+<td>349.2</td>
+<td>20825</td>
+<td>349.2138324</td>
+<td>0.003961156901</td>
+</tr>
+<tr class="even">
+<td>F4 sharp / G4 flat</td>
+<td>370</td>
+<td>19655</td>
+<td>370.00037</td>
+<td>0.0001000001</td>
+</tr>
+<tr class="odd">
+<td>G4</td>
+<td>392</td>
+<td>18551</td>
+<td>392.0185033</td>
+<td>0.004720222795</td>
+</tr>
+<tr class="even">
+<td>G4 sharp / A4 flat</td>
+<td>415.3</td>
+<td>17510</td>
+<td>415.3233552</td>
+<td>0.005623691241</td>
+</tr>
+<tr class="odd">
+<td>A4</td>
+<td>440</td>
+<td>16527</td>
+<td>440.0246414</td>
+<td>0.005600313618</td>
+</tr>
+<tr class="even">
+<td>A4 sharp / B4 flat</td>
+<td>466.2</td>
+<td>15599</td>
+<td>466.2004662</td>
+<td>0.0001000001</td>
+</tr>
+<tr class="odd">
+<td>B4</td>
+<td>493.9</td>
+<td>14724</td>
+<td>493.9033802</td>
+<td>0.0006843796837</td>
+</tr>
+<tr class="even">
+<td>C5</td>
+<td>523.3</td>
+<td>13896</td>
+<td>523.3307385</td>
+<td>0.005873970015</td>
+</tr>
+<tr class="odd">
+<td>C5 sharp / D5 flat</td>
+<td>554.4</td>
+<td>13117</td>
+<td>554.4082385</td>
+<td>0.001486022082</td>
+</tr>
+<tr class="even">
+<td>D5</td>
+<td>587.3</td>
+<td>12382</td>
+<td>587.3154545</td>
+<td>0.002631444243</td>
+</tr>
+<tr class="odd">
+<td>D5 sharp / E5 flat</td>
+<td>622.2</td>
+<td>11687</td>
+<td>622.2388153</td>
+<td>0.006238389151</td>
+</tr>
+<tr class="even">
+<td>E5</td>
+<td>659.2</td>
+<td>11031</td>
+<td>659.2392379</td>
+<td>0.005952354284</td>
+</tr>
+<tr class="odd">
+<td>F5</td>
+<td>698.4</td>
+<td>10412</td>
+<td>698.4276647</td>
+<td>0.003961156901</td>
+</tr>
+<tr class="even">
+<td>F5 sharp / G5 flat</td>
+<td>740.9</td>
+<td>9815</td>
+<td>740.9053864</td>
+<td>0.0007270052853</td>
+</tr>
+<tr class="odd">
+<td>G5</td>
+<td>784</td>
+<td>9275</td>
+<td>784.0370065</td>
+<td>0.004720222795</td>
+</tr>
+<tr class="even">
+<td>G5 sharp / A5 flat</td>
+<td>830.6</td>
+<td>8754</td>
+<td>830.6941488</td>
+<td>0.01133503468</td>
+</tr>
+<tr class="odd">
+<td>A5</td>
+<td>880</td>
+<td>8263</td>
+<td>880.0492828</td>
+<td>0.005600313618</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="calculations-to-show-induvidual-tone-lengths-match-1-error" class="level1">
+<h1>Calculations to show Induvidual Tone Lengths Match 1% Error</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 16%">
+<col style="width: 12%">
+<col style="width: 6%">
+<col style="width: 17%">
+<col style="width: 16%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Note Type</th>
+<th>Duration [s]</th>
+<th>Frequency</th>
+<th>ARR</th>
+<th>FREQ (ACTUAL)</th>
+<th>DUR (ACTUAL)</th>
+<th>% ERROR</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Whole</td>
+<td>0.5</td>
+<td>2</td>
+<td>28550</td>
+<td>2.00000245</td>
+<td>0.4999993875</td>
+<td>0.0001225001501</td>
+</tr>
+<tr class="even">
+<td>Half</td>
+<td>0.25</td>
+<td>4</td>
+<td>14274</td>
+<td>4.000145005</td>
+<td>0.2499909375</td>
+<td>0.003625131411</td>
+</tr>
+<tr class="odd">
+<td>Quarter</td>
+<td>0.125</td>
+<td>8</td>
+<td>7136</td>
+<td>8.00085049</td>
+<td>0.1249867125</td>
+<td>0.01063113009</td>
+</tr>
+<tr class="even">
+<td>Eighth</td>
+<td>0.0625</td>
+<td>16</td>
+<td>3567</td>
+<td>16.00394337</td>
+<td>0.0624846</td>
+<td>0.02464607279</td>
+</tr>
+<tr class="odd">
+<td>Sixteenth</td>
+<td>0.03125</td>
+<td>32</td>
+<td>1783</td>
+<td>32.00788674</td>
+<td>0.0312423</td>
+<td>0.02464607279</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="calculations-to-show-min-and-max-tone-lengths-and-frequency-for-psc-selected" class="level1">
+<h1>Calculations to show Min and Max Tone Lengths and Frequency for PSC Selected</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/max_min.jpeg" class="img-fluid figure-img" width="3000"></p>
+<figcaption>Figure 2: Max Min Calculations</figcaption>
+</figure>
+</div>
+<p>Figure 2 shows the maximum and minimum values for the duration of a note and frequency of the tone. This is limited by the 16 bit auto reload register and the prescaler which is set for either application.</p>
+</section>
+<section id="ai-prototype" class="level1">
+<h1>AI Prototype</h1>
+<p>I gave ChatGPT the following prompt:</p>
+<p>What timers should I use on the STM32L432KC to generate frequencies ranging from 220Hz to 1kHz? What’s the best choice of timer if I want to easily connect it to a GPIO pin? What formulae are relevant, and what registers need to be set to configure them properly?</p>
+<p>It broke its response down into 5 parts that outlined the process of choosing and then configuring the timers to complete the function described. It started by outlining all of the available timers and their basic differences/ functions and then its recommendations. It recommended I use TIM 1, 2, 3, or 5. This is WRONG! Upon my own inspection of the reference manual, our STM does not support a TIM 4 or 5. There is still value in its opinion, but this hallucination is damning. The next two sections outline the calculations that need to be performed in order to properly set the prescaler (PSC), pulse width (RCC), and automatic reload (ARR) in order to get the desired counter frequency. I struggled with this part of the lab, and Chat’s explanation made sense and could potentially provide itself as a good resource for future, similar calculations and conceptual hurdles. The fourth section is the most helpful in my opinion, as it clears up the most difficult aspect of the lab, discerning what the reference manual wants from you when you are trying to configure a peripheral to a mode. Chat gave me lines of code that would show me how to set the right bits in each TIM register. However, Chat used masks without defining their bit shift value, so without drivers or header files, this code is useless! The final section was a short summary and a prompt to me to ask it for clarification.</p>
+<p>I would give this response an F grade due to its content being either incorrect or correct, but unusable for this purpose. First, recommending timers that don’t exist would lead any unsuspecting user down a trail of confusion. These processors are complex, and taking shortcuts with an LLM that is also fallible is not a great idea. Additionally, because the code it provided used undefined masks I would be unable to really use or learn from it without the reference manual. I think if my prompt were targeted, as opposed to asking it to solve multiple problems, I would get clearer information. For example, “what bits do I need to set in order to configure TIMx” could reduce the amount the LLM has to process and increase the detail of the response.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="cmVmbGVjdGlvbiUyQ2xhYnJlcG9ydA==" data-listing-date-sort="1762416000000" data-listing-file-modified-sort="1762462210205" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="645">
-<div class="thumbnail"><a href="./labs/lab7/lab7.html" class="no-external">
-
-<p class="card-img-top"><img src="labs/lab7/images/aes_spi_waves.jpg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./labs/lab7/lab7.html" class="no-external">Lab 7 Report</a>
-</h3>
-<div class="delink listing-description"><a href="./labs/lab7/lab7.html" class="no-external">
-<p>Advanced Encryption Standard (AES)</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./labs/lab7/lab7.html" class="no-external">
-<div class="listing-date">
-Nov 6, 2025
-</div>
-<div class="listing-author">
-George Davis
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="cmVmbGVjdGlvbiUyQ2xhYnJlcG9ydA==" data-listing-date-sort="1761462000000" data-listing-file-modified-sort="1761596697000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="631">
-<div class="thumbnail"><a href="./labs/lab6/lab6.html" class="no-external">
-
-<p class="card-img-top"><img src="labs/lab6/images/website.jpeg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./labs/lab6/lab6.html" class="no-external">Lab 6 Report</a>
-</h3>
-<div class="delink listing-description"><a href="./labs/lab6/lab6.html" class="no-external">
-<p>The Internet of Things and Serial Peripheral Interface</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./labs/lab6/lab6.html" class="no-external">
-<div class="listing-date">
-Oct 26, 2025
-</div>
-<div class="listing-author">
-George Davis
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="cmVmbGVjdGlvbiUyQ2xhYnJlcG9ydA==" data-listing-date-sort="1759820400000" data-listing-file-modified-sort="1759875372224" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1100">
-<div class="thumbnail"><a href="./labs/lab5/lab5.html" class="no-external">
-
-<p class="card-img-top"><img src="labs/lab5/images/lab5_alg.jpeg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./labs/lab5/lab5.html" class="no-external">Lab 5 Report</a>
-</h3>
-<div class="delink listing-description"><a href="./labs/lab5/lab5.html" class="no-external">
-<p>Quadrature Encoder</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./labs/lab5/lab5.html" class="no-external">
-<div class="listing-date">
-Oct 7, 2025
-</div>
-<div class="listing-author">
-George Davis
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="cmVmbGVjdGlvbiUyQ2xhYnJlcG9ydA==" data-listing-date-sort="1759215600000" data-listing-file-modified-sort="1759375655183" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1879">
-<div class="thumbnail"><a href="./labs/lab4/lab4.html" class="no-external">
-
-<p class="card-img-top"><img src="labs/lab4/images/lab4_schem.jpeg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./labs/lab4/lab4.html" class="no-external">Lab 4 Report</a>
-</h3>
-<div class="delink listing-description"><a href="./labs/lab4/lab4.html" class="no-external">
-<p>Digital Audio</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./labs/lab4/lab4.html" class="no-external">
-<div class="listing-date">
-Sep 30, 2025
-</div>
-<div class="listing-author">
-George Davis
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="cmVmbGVjdGlvbiUyQ2xhYnJlcG9ydA==" data-listing-date-sort="1757401200000" data-listing-file-modified-sort="1762426337185" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="736">
-<div class="thumbnail"><a href="./labs/lab2/lab2.html" class="no-external">
-
-<p class="card-img-top"><img src="labs/lab2/images/dual_seven_seg.jpeg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./labs/lab2/lab2.html" class="no-external">Lab 2 Report</a>
-</h3>
-<div class="delink listing-description"><a href="./labs/lab2/lab2.html" class="no-external">
-<p>Multiplexed 7-Segment Display</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./labs/lab2/lab2.html" class="no-external">
-<div class="listing-date">
-Sep 9, 2025
-</div>
-<div class="listing-author">
-George Davis
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="cmVmbGVjdGlvbiUyQ2xhYnJlcG9ydA==" data-listing-date-sort="1756796400000" data-listing-file-modified-sort="1759365925359" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1051">
-<div class="thumbnail"><a href="./labs/lab1/lab1.html" class="no-external">
-
-<p class="card-img-top"><img src="labs/lab1/images/lab1_block-diagram.jpeg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./labs/lab1/lab1.html" class="no-external">Lab 1 Report</a>
-</h3>
-<div class="delink listing-description"><a href="./labs/lab1/lab1.html" class="no-external">
-<p>FPGA and MCU Setup and Testing</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./labs/lab1/lab1.html" class="no-external">
-<div class="listing-date">
-Sep 2, 2025
-</div>
-<div class="listing-author">
-George Davis
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -764,6 +898,7 @@ George Davis
   });
   </script>
 </div> <!-- /content -->
+<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 
