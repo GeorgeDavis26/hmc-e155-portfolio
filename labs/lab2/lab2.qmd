@@ -16,13 +16,13 @@ format:
 
 ## Summary
 
-Lab 2 focused on creating a multiplexed seven segment display by using the internal high speed oscillator to create a low frequency enable which control a mux and demux module. My design meets the proficiency requirements but I am missing the testbenches for most of my modules. 
+Lab 2 focused on creating a multiplexed seven segment display by using the internal high speed oscillator to create a low frequency enable which control a mux and demux module. My design meets the excellence requirements
 
 I spent 10 hours on this lab
 
 ## Functional Demonstation
 
-(images/dual_seven_seg.jpeg){width=3000}
+![](images/dual_seven_seg.jpeg){width=3000}
 
 
 ## Technical Documentation
@@ -44,6 +44,32 @@ Figure 2 shows the physical layout of the circuit along with the pin names and n
 ![Figure 6: Current Calculations](images/calcs.jpeg){width=3000}
 
 Figure 6 shows the calculated current for each of the GPIO pin use cases. All current draw and sink values are within the current specs for a single GPIO pin.
+
+# Testbenches and Waveforms
+
+![Top level Module: Testbench Waveforms](images/lab2_gd_waves.jpeg){width=3000}
+
+![Top level Module Testbench Test Passing Message](images/lab2_gd_success.jpeg){width=3000}
+
+![HSOSC Module Testbench Waveforms](images/HSOSC_waves.jpeg){width=3000}
+
+![HSOSC Module Testbench Test Passing Message](images/HSOSC_success.jpeg){width=3000}
+
+![Led Adder Module Testbench Waveforms](images/led_adder_waves.jpeg){width=3000}
+
+![Top level Module Testbench Test Passing Message](images/led_adder_success.jpeg){width=3000}
+
+![Seven Seg Disp Module Testbench Waveforms](images/seven_seg_disp.jpeg){width=3000}
+
+![Seven Seg DispTestbench Test Passing Message](images/seven_seg_success.jpeg){width=3000}
+
+![Switch Mux Module Testbench Waveforms](images/switch_mux_waves.jpeg){width=3000}
+
+![Switch Mux Testbench Test Passing Message](images/switch_mux_success.jpeg){width=3000}
+
+![Two But Demux Testbench Waveforms](images/two_bit_dmux_waves.jpeg){width=3000}
+
+![Switch Mux Testbench Test Passing Message](images/two_bit_dmux_success.jpeg){width=3000}
 
 # AI Prototype
 
