@@ -25,13 +25,6 @@ I spent about 28 hours on this lab (a lot on the block diagram!)
 
 ## Testbench Passing
 
-
-## Technical Documentation
-
-The source code for this lab can be found in the associated Github repository found by following the link on the righthand side of the page.
-
-## Schematic
-
 ![aes_spi_testbench: Waveforms](images/aes_spi_waves.jpg){width=3000}
 
 ![aes_spi_testbench: Successful Testbench Message](images/aes_spi_success.jpg){width=3000}
@@ -39,6 +32,10 @@ The source code for this lab can be found in the associated Github repository fo
 ![aes_core_testbench: Waveforms](images/aes_waves.jpg){width=3000}
 
 ![aes_core_testbench: Successful Testbench Message](images/aes_success.jpg){width=3000}
+
+## Technical Documentation
+
+The source code for this lab can be found in the associated Github repository found by following the link on the righthand side of the page.
 
 # Block Diagram
 
