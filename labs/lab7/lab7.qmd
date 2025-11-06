@@ -11,7 +11,7 @@ format:
   html:
     other-links:
       - text: Link to Github Repo with code
-        href: github.com/GeorgeDavis26/e155_lab7_gd
+        href: https://github.com/GeorgeDavis26/e155_lab7_gd
 ---
 
 ## Summary
