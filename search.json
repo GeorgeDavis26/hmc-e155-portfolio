@@ -298,7 +298,7 @@
     "href": "labs/lab7/lab7.html#testbench-passing",
     "title": "Lab 7 Report",
     "section": "Testbench Passing",
-    "text": "Testbench Passing"
+    "text": "Testbench Passing\n\n\n\naes_spi_testbench: Waveforms\n\n\n\n\n\naes_spi_testbench: Successful Testbench Message\n\n\n\n\n\naes_core_testbench: Waveforms\n\n\n\n\n\naes_core_testbench: Successful Testbench Message"
   },
   {
     "objectID": "labs/lab7/lab7.html#technical-documentation",
@@ -306,13 +306,6 @@
     "title": "Lab 7 Report",
     "section": "Technical Documentation",
     "text": "Technical Documentation\nThe source code for this lab can be found in the associated Github repository found by following the link on the righthand side of the page."
-  },
-  {
-    "objectID": "labs/lab7/lab7.html#schematic",
-    "href": "labs/lab7/lab7.html#schematic",
-    "title": "Lab 7 Report",
-    "section": "Schematic",
-    "text": "Schematic\n\n\n\naes_spi_testbench: Waveforms\n\n\n\n\n\naes_spi_testbench: Successful Testbench Message\n\n\n\n\n\naes_core_testbench: Waveforms\n\n\n\n\n\naes_core_testbench: Successful Testbench Message"
   },
   {
     "objectID": "labs/lab2/lab2.html",
